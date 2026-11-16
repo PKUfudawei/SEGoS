@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1627,
+      "sha256": "ad2edb9f720ed4365e35feaa798ca5d39cbd6d66568badb7951421633ac928c8"
+    },
+    {
+      "path": "data/benchmarks/alfworld/alfworld_textworld.tar.gz",
+      "bytes": 131237145,
+      "sha256": "d45d285fa795afd8d107ad0a8e8a97813a60e2342d990ee19558696924e87550"
+    },
+    {
+      "path": "data/benchmarks/alfworld/archive_manifest.json",
+      "bytes": 2057,
+      "sha256": "14a989fe76d03e964ea1ed83b5dc2f1c8ccba78c460be7664a5999458552a91e"
+    },
+    {
+      "path": "data/benchmarks/skillsbench/archive_manifest.json",
+      "bytes": 690,
+      "sha256": "d0ce72d3ea97c306d4ca9116e1abcf41761b5b360eaf38718af82ff70c1f9ffc"
+    },
+    {
+      "path": "data/benchmarks/skillsbench/splits/train50_eval37.json",
+      "bytes": 3399,
+      "sha256": "8e9b2d271f1d0bdf64158d20fce095dfd4a0065dddbbf593d59afb598912ce7c"
+    },
+    {
+      "path": "data/benchmarks/skillsbench/tasks.tar.gz",
+      "bytes": 806141897,
+      "sha256": "7f7687cb295aca8d3892a2bd5eda6fd406b5c20a7a16f75dc6db9df1f1d00a79"
+    },
+    {
+      "path": "data/experiments/alfworld/coldstart/segos_coldstart_skills200.json",
+      "bytes": 1729371,
+      "sha256": "a7a39d20bc0cff272502e51b88cfa9f07c56776fd82f82e3829f088b8375c5ad"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/coldstart/segos_coldstart_skills1000.json",
+      "bytes": 6045187,
+      "sha256": "5a94d61fcb5c3826beb1e4bb07afe4b080205622f8546c398d24701827b5650c"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/controls/evolved_typed_gos/graphs/evolved_typed_gos_skills1000.json",
+      "bytes": 6643395,
+      "sha256": "27cfbba2cc94fdcd5cebfb1ebaa0b5103e64589452e7d819a5504f12c3af5f87"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/controls/evolved_typed_gos/scores/attempt_scores.jsonl",
+      "bytes": 53058,
+      "sha256": "94f05662abfabaae9bc2541f2f55302e9ef113f474aa3f3b0bd080a7f8163d80"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/controls/random_rewire_seed42/randomization_seed42_report.json",
+      "bytes": 1643,
+      "sha256": "8dde01dab259ff5c10abb8147f8b653df48974a1e508309ea630c732bfcb1a46"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/controls/random_rewire_seed42/segos_evolved_skills1000_round1_random_seed42.json",
+      "bytes": 6121889,
+      "sha256": "dc0e1fcca895c9ed7d2e7a37a1cebaa5c689cdb1fb10cd86a83e85e754764a6c"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/evolution/segos_evolution_deltas.tar.gz",
+      "bytes": 68171,
+      "sha256": "31d9114c32f8d829958f58f0afa8ad056ad46c8f23727fe13f152d7bd91fbef6"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round1.json",
+      "bytes": 6119713,
+      "sha256": "137d083e062137cb7d2b82492fa361b8b26e01318a0179d31f35dc05353d18e0"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round2.json",
+      "bytes": 6197936,
+      "sha256": "cdd5286052f52421bf793a7001055ed6100b4e2f3330cd520c1353ddd7fa8cb2"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round3.json",
+      "bytes": 6241910,
+      "sha256": "9164f2432566cc21f8953bdf5edb90e95282100af40046120818452034cfcd99"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/provenance/avoid_transition_evidence.json",
+      "bytes": 82589,
+      "sha256": "ffc14562fa7fb5abd92d964697495a1015d3643743aea07578a25cf70f9be718"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/scores/segos_attempt_scores.jsonl",
+      "bytes": 31637,
+      "sha256": "45d4dfcb7099c70c5b40fb662c0f3a85b57cc967197c1c9d33e6649870e1dca1"
+    },
+    {
+      "path": "data/experiments/skillsbench/full87/scores/skilldag_attempt_scores.jsonl",
+      "bytes": 32501,
+      "sha256": "79d51c5067c0f21b3be5ee5d81a605c6ffceb6aedd0101b9613b1dc63c0b7764"
+    },
+    {
+      "path": "data/experiments/skillsbench/heldout/evolution/segos_evolution_deltas.tar.gz",
+      "bytes": 11307,
+      "sha256": "9f69ed0f41e2995a155f4a5ebcf59b01c11f73f5428692ed9bfb75b82a394b86"
+    },
+    {
+      "path": "data/experiments/skillsbench/heldout/graphs/segos_evolved_skills1000_heldout_train50.json",
+      "bytes": 6083156,
+      "sha256": "3f9de3ce6b0d9dd32fc0e615bd4802f8344652d9a515d52673ab5d6df92c2382"
+    },
+    {
+      "path": "data/experiments/skillsbench/heldout/scores/segos_attempt_scores.jsonl",
+      "bytes": 14467,
+      "sha256": "36bf758e3cc2d8a7d56a973aed86febb6f3812e55321cbb91c7b9ff488b2f3f0"
+    },
+    {
+      "path": "data/experiments/skillsbench/heldout/scores/skilldag_attempt_scores.jsonl",
+      "bytes": 14842,
+      "sha256": "746460091ef8c21be32c1027b79b9a66800975de47f837c42f637bd2573270cd"
+    },
+    {
+      "path": "data/manifest.json",
+      "bytes": 5589,
+      "sha256": "1675736264b72a55f989213203c38397481c7832eebef53f276e1610879c5302"
+    },
+    {
+      "path": "data/skillsets/README.md",
+      "bytes": 260,
+      "sha256": "b6620e403cef3c63e487a3e2918a40136f6444b0b4d359325bcf71b430f686d6"
+    },
+    {
+      "path": "data/skillsets/archive_manifest.json",
+      "bytes": 2523,
+      "sha256": "fa8715eeb4457f6e160751d269446015af3eeb3867a6159334476af0585b2c5f"
+    },
+    {
+      "path": "data/skillsets/archives/skills_1000.tar.gz",
+      "bytes": 4415839,
+      "sha256": "59f6a5321314529e207e53ee4e9b5170d28dd91c8fc4994896b1adaa14eadea8"
+    },
+    {
+      "path": "data/skillsets/archives/skills_200.tar.gz",
+      "bytes": 1284141,
+      "sha256": "8872f6088a92bcce1b68f9cfdf033190b2425b071eea3f438e98331635b0a634"
+    },
+    {
+      "path": "data/skillsets/archives/skills_2000.tar.gz",
+      "bytes": 28482159,
+      "sha256": "68fce6805b7276af7977b4d080be4cc7047d8b0a3892a528b3c2404425ad1faf"
+    },
+    {
+      "path": "data/skillsets/archives/skills_500.tar.gz",
+      "bytes": 4176289,
+      "sha256": "ac1a57e3f3659a716cafce875ade6f11055744192b5375af0d5f5f4e9d719915"
+    },
+    {
+      "path": "tables/README.md",
+      "bytes": 537,
+      "sha256": "8fa5bd927c67255a638c127aeb832583bacc89a8be7f772b5b212e3d27bc73dd"
+    },
+    {
+      "path": "tables/index.json",
+      "bytes": 5107,
+      "sha256": "0788d2f09d49ac9c7adf7de25000d145b445dedf855a84ef1a777ece527c5363"
+    },
+    {
+      "path": "tables/table_01_positioning.json",
+      "bytes": 20292,
+      "sha256": "735fe7c38046777693124b09198e34072ff95b56da4f2d46ebad8a27ab203b09"
+    },
+    {
+      "path": "tables/table_02_main.json",
+      "bytes": 35945,
+      "sha256": "fc55790ffbb57a2b53da379b1dea253c9f3018e70df06256c846f8756b420173"
+    },
+    {
+      "path": "tables/table_03_heldout.json",
+      "bytes": 11780,
+      "sha256": "e5697ad4f9e60b64c1441ae047c4fcdc5d8dd1a0adc17b5a4c8392f0c190bc8b"
+    },
+    {
+      "path": "tables/table_04_ablation.json",
+      "bytes": 11692,
+      "sha256": "77dcd36072b80d96364d3cc78ef68295d81786d330f8c1fab85631a8b31244a3"
+    },
+    {
+      "path": "tables/table_05_workflow_support.json",
+      "bytes": 7501,
+      "sha256": "c66ec826a155cc70bc4f27ebe3ce0cdaf91ec8dc6c5778458c6c9d9c130f6f9a"
+    },
+    {
+      "path": "tables/table_06_controls.json",
+      "bytes": 8671,
+      "sha256": "59e90ec4b76d8d499bdde576674e9061e60c898df91b13612f71c91b17a7eb63"
+    },
+    {
+      "path": "tables/table_07_multiround.json",
+      "bytes": 12106,
+      "sha256": "b90d78d50531004a1caa3e5ea0690486e9a75c307d532106bc5ed4f389dea1b8"
+    },
+    {
+      "path": "tables/table_08_hyperparams.json",
+      "bytes": 20067,
+      "sha256": "e73fdec210d19ee1458bec5daf6245eeb08c3a57d9d6b18f03ace6e0e98d0344"
+    },
+    {
+      "path": "tables/table_09_heldout_split.json",
+      "bytes": 10059,
+      "sha256": "fac32184118c9558bbe6de5ea1ed78d6e2175cf82e29e36cce49347da490d72c"
+    },
+    {
+      "path": "tables/table_10_protocol_comparison.json",
+      "bytes": 7736,
+      "sha256": "1c52b9fbfbdbb506fc8c8cf2e2bccb9dfac7e1e9bcc065382c1b5615ff03fbab"
+    },
+    {
+      "path": "tables/table_11_avoid_diagnostics.json",
+      "bytes": 4310,
+      "sha256": "a8d4834188747223e9cc60d7d9958c9267544d6618a0f36cc720d3448fcc8063"
+    },
+    {
+      "path": "tables/table_12_heldout_avoid.json",
+      "bytes": 2472,
+      "sha256": "3b152100bec8986b3141cd8af2a5becd0cbfbce18abe9140f54246d92ed37d5b"
+    }
+  ]
+}

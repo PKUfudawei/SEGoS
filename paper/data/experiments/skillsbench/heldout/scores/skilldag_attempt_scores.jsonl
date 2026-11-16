@@ -1,0 +1,74 @@
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"ada-bathroom-plan-repair","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"ada-bathroom-plan-repair","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"adaptive-cruise-control","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"adaptive-cruise-control","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"azure-bgp-oscillation-route-leak","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"azure-bgp-oscillation-route-leak","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"citation-check","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"citation-check","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"civ6-adjacency-optimizer","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 0.05; 0.1; 0.15; 0.2; 0.25; 0.3; 0.35; 0.4; 0.45; 0.5; 0.55; 0.6; 0.65; 0.7; 0.75; 0.8; 0.85; 0.9; 0.95; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"civ6-adjacency-optimizer","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 0.05; 0.1; 0.15; 0.2; 0.25; 0.3; 0.35; 0.4; 0.45; 0.5; 0.55; 0.6; 0.65; 0.7; 0.75; 0.8; 0.85; 0.9; 0.95; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"crystallographic-wyckoff-position-analysis","attempt_id":1,"reward":0.55,"allowed_reward_values":"0; 0.09; 0.18; 0.27; 0.36; 0.45; 0.55; 0.64; 0.73; 0.82; 0.91; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"crystallographic-wyckoff-position-analysis","attempt_id":2,"reward":0.55,"allowed_reward_values":"0; 0.09; 0.18; 0.27; 0.36; 0.45; 0.55; 0.64; 0.73; 0.82; 0.91; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"dapt-intrusion-detection","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"dapt-intrusion-detection","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"data-to-d3","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"data-to-d3","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"debug-trl-grpo","attempt_id":1,"reward":0.6,"allowed_reward_values":"0; 0.25; 0.35; 0.4; 0.6; 0.65; 0.75; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"debug-trl-grpo","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 0.25; 0.35; 0.4; 0.6; 0.65; 0.75; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"dialogue-parser","attempt_id":1,"reward":0.833,"allowed_reward_values":"0; 0.167; 0.333; 0.5; 0.667; 0.833; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"dialogue-parser","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 0.167; 0.333; 0.5; 0.667; 0.833; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"drone-planning-control","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 0.033333; 0.066667; 0.1; 0.133333; 0.166667; 0.2; 0.233333; 0.266667; 0.3; 0.333333; 0.366667; 0.4; 0.433333; 0.466667; 0.5; 0.533333; 0.566667; 0.6; 0.633333; 0.666667; 0.7; 0.733333; 0.766667; 0.8; 0.833333; 0.866667; 0.9; 0.933333; 0.966667; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"drone-planning-control","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 0.033333; 0.066667; 0.1; 0.133333; 0.166667; 0.2; 0.233333; 0.266667; 0.3; 0.333333; 0.366667; 0.4; 0.433333; 0.466667; 0.5; 0.533333; 0.566667; 0.6; 0.633333; 0.666667; 0.7; 0.733333; 0.766667; 0.8; 0.833333; 0.866667; 0.9; 0.933333; 0.966667; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"earthquake-plate-calculation","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"earthquake-plate-calculation","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"enterprise-information-search","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"enterprise-information-search","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"exceltable-in-ppt","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"exceltable-in-ppt","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"exoplanet-detection-period","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"exoplanet-detection-period","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"fix-build-agentops","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"fix-build-agentops","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"fix-build-google-auto","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"fix-build-google-auto","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"flood-risk-analysis","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"flood-risk-analysis","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"lab-unit-harmonization","attempt_id":1,"reward":1.0,"allowed_reward_values":"round(p/n,3), 0<=p<=n<=48, n>=1; 0 or 1 when no valid counts are available"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"lab-unit-harmonization","attempt_id":2,"reward":0.878,"allowed_reward_values":"round(p/n,3), 0<=p<=n<=48, n>=1; 0 or 1 when no valid counts are available"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"lake-warming-attribution","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"lake-warming-attribution","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"latex-formula-extraction","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"latex-formula-extraction","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"manufacturing-equipment-maintenance","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"manufacturing-equipment-maintenance","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"manufacturing-fjsp-optimization","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"manufacturing-fjsp-optimization","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"mario-coin-counting","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"mario-coin-counting","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"multilingual-video-dubbing","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"multilingual-video-dubbing","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"offer-letter-generator","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"offer-letter-generator","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"pddl-tpp-planning","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"pddl-tpp-planning","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"pptx-reference-formatting","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"pptx-reference-formatting","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"r2r-mpc-control","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"r2r-mpc-control","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"sec-financial-report","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"sec-financial-report","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"setup-fuzzing-py","attempt_id":1,"reward":0.83,"allowed_reward_values":"0; 0.16; 0.33; 0.5; 0.66; 0.83; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"setup-fuzzing-py","attempt_id":2,"reward":0.83,"allowed_reward_values":"0; 0.16; 0.33; 0.5; 0.66; 0.83; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"shock-analysis-supply","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"shock-analysis-supply","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"software-dependency-audit","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"software-dependency-audit","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"tictoc-unnecessary-abort-detection","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 0.05; 0.1; 0.15; 0.25; 0.35; 0.45; 0.5; 0.55; 0.7; 0.85; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"tictoc-unnecessary-abort-detection","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 0.05; 0.1; 0.15; 0.25; 0.35; 0.45; 0.5; 0.55; 0.7; 0.85; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"travel-planning","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"travel-planning","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"weighted-gdp-calc","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"weighted-gdp-calc","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"xlsx-recover-data","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SkillDAG","protocol":"skillDAG_heldout37","model":"deepseek-v4-flash-0731","task_name":"xlsx-recover-data","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}

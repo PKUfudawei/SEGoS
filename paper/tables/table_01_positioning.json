@@ -1,0 +1,742 @@
+{
+  "schema_version": 1,
+  "table_number": 1,
+  "labels": [
+    "tab:positioning"
+  ],
+  "caption": "Method positioning. ✓/-- indicate presence/absence of each property. Graph-based retrieval uses inter-item graph relations during retrieval. LLM-free graph initialization constructs the initial graph without LLM calls; -- also denotes methods without graph initialization. SkillGraph uses teacher-generated skill nodes even though its initial edges follow fixed rules. SE-GoS refers to the primary semantic-only initialization. Execution-driven updates use execution traces or outcomes to update system state. Training-free excludes neural-weight training of either the agent or retriever. Skill selection chooses library skills for the current task, whether or not their content is also edited. Edge-weight updates adapt numerical relation weights from feedback. Retrieval-description updates optimize descriptions for retrieval while leaving source skill content unchanged. Rows describe the original methods: MemRL retrieves episodic memories, and SkillOpt optimizes a shared skill document. Our experimental MemRL* adaptation selects skills.",
+  "caption_latex": "\\textbf{Method positioning.} $\\checkmark$/-- indicate presence/absence of each property. \\emph{Graph-based retrieval} uses inter-item graph relations during retrieval. \\emph{LLM-free graph initialization} constructs the initial graph without LLM calls; -- also denotes methods without graph initialization. SkillGraph uses teacher-generated skill nodes even though its initial edges follow fixed rules. SE-GoS refers to the primary semantic-only initialization. \\emph{Execution-driven updates} use execution traces or outcomes to update system state. \\emph{Training-free} excludes neural-weight training of either the agent or retriever. \\emph{Skill selection} chooses library skills for the current task, whether or not their content is also edited. \\emph{Edge-weight updates} adapt numerical relation weights from feedback. \\emph{Retrieval-description updates} optimize descriptions for retrieval while leaving source skill content unchanged. Rows describe the original methods: MemRL retrieves episodic memories, and SkillOpt optimizes a shared skill document. Our experimental MemRL$^{*}$ adaptation selects skills.",
+  "source": {
+    "file": "sections/background.tex",
+    "line": 4,
+    "table_sha256": "51849cdbd4099c330c317cd57f90472bc413e0532bab3abec860d0712821b22d"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Method",
+        "Graph-based retrieval",
+        "LLM-free graph initialization",
+        "Execution-driven updates",
+        "Training-free",
+        "Skill selection",
+        "Edge-weight updates",
+        "Retrieval-description updates"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "\\textbf{Method}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Method",
+              "value": "Method",
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{Graph-based retrieval}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Graph-based retrieval",
+              "value": "Graph-based retrieval",
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{LLM-free graph initialization}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "LLM-free graph initialization",
+              "value": "LLM-free graph initialization",
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{Execution-driven updates}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Execution-driven updates",
+              "value": "Execution-driven updates",
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{Training-free}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Training-free",
+              "value": "Training-free",
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{Skill selection}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Skill selection",
+              "value": "Skill selection",
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{Edge-weight updates}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Edge-weight updates",
+              "value": "Edge-weight updates",
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{Retrieval-description updates}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Retrieval-description updates",
+              "value": "Retrieval-description updates",
+              "emphasis": "bold"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "GoS",
+              "value": "GoS"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SkillRouter",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillRouter",
+              "value": "SkillRouter"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SkillDAG",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillDAG",
+              "value": "SkillDAG"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "MemRL",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "MemRL",
+              "value": "MemRL"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SkillOpt",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillOpt",
+              "value": "SkillOpt"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SELM",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SELM",
+              "value": "SELM"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SkillGraph",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillGraph",
+              "value": "SkillGraph"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "TrackRL",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "TrackRL",
+              "value": "TrackRL"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "\\textbf{SE-GoS}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SE-GoS",
+              "value": "SE-GoS",
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            },
+            {
+              "latex": "\\checkmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "✓",
+              "value": "✓"
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "GoS",
+          "✓",
+          "--",
+          "--",
+          "✓",
+          "✓",
+          "--",
+          "--"
+        ],
+        [
+          "SkillRouter",
+          "--",
+          "--",
+          "--",
+          "--",
+          "✓",
+          "--",
+          "--"
+        ],
+        [
+          "SkillDAG",
+          "✓",
+          "--",
+          "✓",
+          "✓",
+          "✓",
+          "--",
+          "--"
+        ],
+        [
+          "MemRL",
+          "--",
+          "--",
+          "✓",
+          "✓",
+          "--",
+          "--",
+          "--"
+        ],
+        [
+          "SkillOpt",
+          "--",
+          "--",
+          "✓",
+          "✓",
+          "--",
+          "--",
+          "--"
+        ],
+        [
+          "SELM",
+          "--",
+          "--",
+          "✓",
+          "✓",
+          "✓",
+          "--",
+          "--"
+        ],
+        [
+          "SkillGraph",
+          "✓",
+          "--",
+          "✓",
+          "--",
+          "✓",
+          "✓",
+          "--"
+        ],
+        [
+          "TrackRL",
+          "--",
+          "--",
+          "✓",
+          "--",
+          "✓",
+          "--",
+          "--"
+        ],
+        [
+          "SE-GoS",
+          "✓",
+          "✓",
+          "✓",
+          "✓",
+          "✓",
+          "✓",
+          "✓"
+        ]
+      ]
+    }
+  ]
+}

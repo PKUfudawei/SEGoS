@@ -1,0 +1,1446 @@
+{
+  "schema_version": 1,
+  "table_number": 2,
+  "labels": [
+    "tab:main"
+  ],
+  "caption": "Main results. R: reward (%), T: input tokens (M), S: runtime (s). Bold/underline mark best/second-best for each backbone and benchmark. MemRL* denotes our adaptation of MemRL's episodic-memory retrieval to skill retrieval.",
+  "caption_latex": "\\textbf{Main results.} R: reward (\\%), T: input tokens (M), S: runtime (s). Bold/underline mark best/second-best for each backbone and benchmark. MemRL$^{*}$ denotes our adaptation of MemRL's episodic-memory retrieval to skill retrieval.",
+  "source": {
+    "file": "sections/experiment.tex",
+    "line": 24,
+    "table_sha256": "46937102b6fa2bb923c8824ba2221dd4a2e69d294412358e7e6606eeb301f2f9"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Model",
+        "Method",
+        "R ↑",
+        "T ↓",
+        "S ↓",
+        "R ↑",
+        "T ↓",
+        "S ↓"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "\\multicolumn{3}{c}{SkillsBench}",
+              "row_span": 1,
+              "column_span": 3,
+              "text": "SkillsBench",
+              "value": "SkillsBench"
+            },
+            {
+              "latex": "\\multicolumn{3}{c}{ALFWorld}",
+              "row_span": 1,
+              "column_span": 3,
+              "text": "ALFWorld",
+              "value": "ALFWorld"
+            }
+          ]
+        },
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Model",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Model",
+              "value": "Model"
+            },
+            {
+              "latex": "Method",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Method",
+              "value": "Method"
+            },
+            {
+              "latex": "R $\\uparrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "R ↑",
+              "value": "R ↑"
+            },
+            {
+              "latex": "T $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "T ↓",
+              "value": "T ↓"
+            },
+            {
+              "latex": "S $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "S ↓",
+              "value": "S ↓"
+            },
+            {
+              "latex": "R $\\uparrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "R ↑",
+              "value": "R ↑"
+            },
+            {
+              "latex": "T $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "T ↓",
+              "value": "T ↓"
+            },
+            {
+              "latex": "S $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "S ↓",
+              "value": "S ↓"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "\\multirow{6}{=}{\\raggedright\\texttt{deepseek-v4-\\allowbreak flash-0731}}",
+              "row_span": 6,
+              "column_span": 1,
+              "text": "deepseek-v4-flash-0731",
+              "value": "deepseek-v4-flash-0731"
+            },
+            {
+              "latex": "Vanilla",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Vanilla",
+              "value": "Vanilla"
+            },
+            {
+              "latex": "46.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "46.2",
+              "value": 46.2
+            },
+            {
+              "latex": "5.06",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "5.06",
+              "value": 5.06
+            },
+            {
+              "latex": "\\textbf{771.4}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "771.4",
+              "value": 771.4,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "80.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "80.4",
+              "value": 80.4
+            },
+            {
+              "latex": "1.81",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1.81",
+              "value": 1.81
+            },
+            {
+              "latex": "85.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "85.1",
+              "value": 85.1
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "Vector",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Vector",
+              "value": "Vector"
+            },
+            {
+              "latex": "38.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "38.7",
+              "value": 38.7
+            },
+            {
+              "latex": "\\textbf{3.11}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.11",
+              "value": 3.11,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\underline{790.7}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "790.7",
+              "value": 790.7,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "83.9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "83.9",
+              "value": 83.9
+            },
+            {
+              "latex": "\\textbf{0.04}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.04",
+              "value": 0.04,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{60.3}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "60.3",
+              "value": 60.3,
+              "emphasis": "bold"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "MemRL$^{*}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "MemRL*",
+              "value": "MemRL*"
+            },
+            {
+              "latex": "49.6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "49.6",
+              "value": 49.6
+            },
+            {
+              "latex": "\\underline{3.32}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.32",
+              "value": 3.32,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "803.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "803.1",
+              "value": 803.1
+            },
+            {
+              "latex": "85.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "85.7",
+              "value": 85.7
+            },
+            {
+              "latex": "\\underline{0.05}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.05",
+              "value": 0.05,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "69.0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "69.0",
+              "value": 69.0
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "GoS",
+              "value": "GoS"
+            },
+            {
+              "latex": "52.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "52.4",
+              "value": 52.4
+            },
+            {
+              "latex": "3.67",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.67",
+              "value": 3.67
+            },
+            {
+              "latex": "843.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "843.8",
+              "value": 843.8
+            },
+            {
+              "latex": "88.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "88.2",
+              "value": 88.2
+            },
+            {
+              "latex": "0.07",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.07",
+              "value": 0.07
+            },
+            {
+              "latex": "65.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "65.2",
+              "value": 65.2
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "SkillDAG",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillDAG",
+              "value": "SkillDAG"
+            },
+            {
+              "latex": "\\underline{55.3}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "55.3",
+              "value": 55.3,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "3.62",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.62",
+              "value": 3.62
+            },
+            {
+              "latex": "862.9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "862.9",
+              "value": 862.9
+            },
+            {
+              "latex": "\\underline{90.4}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "90.4",
+              "value": 90.4,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "0.06",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.06",
+              "value": 0.06
+            },
+            {
+              "latex": "66.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "66.8",
+              "value": 66.8
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "SE-GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SE-GoS",
+              "value": "SE-GoS"
+            },
+            {
+              "latex": "\\textbf{59.4}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "59.4",
+              "value": 59.4,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "3.45",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.45",
+              "value": 3.45
+            },
+            {
+              "latex": "883.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "883.7",
+              "value": 883.7
+            },
+            {
+              "latex": "\\textbf{91.1}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "91.1",
+              "value": 91.1,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "0.07",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.07",
+              "value": 0.07
+            },
+            {
+              "latex": "\\underline{63.2}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "63.2",
+              "value": 63.2,
+              "emphasis": "underline"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "\\multirow{6}{=}{\\raggedright\\texttt{minimax-m2.7}}",
+              "row_span": 6,
+              "column_span": 1,
+              "text": "minimax-m2.7",
+              "value": "minimax-m2.7"
+            },
+            {
+              "latex": "Vanilla",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Vanilla",
+              "value": "Vanilla"
+            },
+            {
+              "latex": "17.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "17.2",
+              "value": 17.2
+            },
+            {
+              "latex": "0.94",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.94",
+              "value": 0.94
+            },
+            {
+              "latex": "580.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "580.7",
+              "value": 580.7
+            },
+            {
+              "latex": "47.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "47.1",
+              "value": 47.1
+            },
+            {
+              "latex": "2.18",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2.18",
+              "value": 2.18
+            },
+            {
+              "latex": "88.6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "88.6",
+              "value": 88.6
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "Vector",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Vector",
+              "value": "Vector"
+            },
+            {
+              "latex": "10.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "10.4",
+              "value": 10.4
+            },
+            {
+              "latex": "\\textbf{0.85}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.85",
+              "value": 0.85,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\underline{552.9}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "552.9",
+              "value": 552.9,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "50.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "50.7",
+              "value": 50.7
+            },
+            {
+              "latex": "\\textbf{0.07}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.07",
+              "value": 0.07,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\underline{73.4}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "73.4",
+              "value": 73.4,
+              "emphasis": "underline"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "MemRL$^{*}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "MemRL*",
+              "value": "MemRL*"
+            },
+            {
+              "latex": "20.9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "20.9",
+              "value": 20.9
+            },
+            {
+              "latex": "0.91",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.91",
+              "value": 0.91
+            },
+            {
+              "latex": "571.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "571.1",
+              "value": 571.1
+            },
+            {
+              "latex": "55.0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "55.0",
+              "value": 55.0
+            },
+            {
+              "latex": "\\underline{0.08}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.08",
+              "value": 0.08,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "80.6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "80.6",
+              "value": 80.6
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "GoS",
+              "value": "GoS"
+            },
+            {
+              "latex": "18.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "18.7",
+              "value": 18.7
+            },
+            {
+              "latex": "\\underline{0.87}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.87",
+              "value": 0.87,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "\\textbf{502.5}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "502.5",
+              "value": 502.5,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "54.3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "54.3",
+              "value": 54.3
+            },
+            {
+              "latex": "\\textbf{0.07}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.07",
+              "value": 0.07,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{68.8}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "68.8",
+              "value": 68.8,
+              "emphasis": "bold"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "SkillDAG",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillDAG",
+              "value": "SkillDAG"
+            },
+            {
+              "latex": "\\underline{27.3}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "27.3",
+              "value": 27.3,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "1.05",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1.05",
+              "value": 1.05
+            },
+            {
+              "latex": "560.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "560.2",
+              "value": 560.2
+            },
+            {
+              "latex": "\\underline{67.1}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "67.1",
+              "value": 67.1,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "0.09",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.09",
+              "value": 0.09
+            },
+            {
+              "latex": "75.9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "75.9",
+              "value": 75.9
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "SE-GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SE-GoS",
+              "value": "SE-GoS"
+            },
+            {
+              "latex": "\\textbf{28.5}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "28.5",
+              "value": 28.5,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "0.92",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.92",
+              "value": 0.92
+            },
+            {
+              "latex": "572.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "572.4",
+              "value": 572.4
+            },
+            {
+              "latex": "\\textbf{68.6}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "68.6",
+              "value": 68.6,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\underline{0.08}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.08",
+              "value": 0.08,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "74.3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "74.3",
+              "value": 74.3
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "\\multirow{6}{=}{\\raggedright\\texttt{gpt-5.2-codex}}",
+              "row_span": 6,
+              "column_span": 1,
+              "text": "gpt-5.2-codex",
+              "value": "gpt-5.2-codex"
+            },
+            {
+              "latex": "Vanilla",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Vanilla",
+              "value": "Vanilla"
+            },
+            {
+              "latex": "27.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "27.4",
+              "value": 27.4
+            },
+            {
+              "latex": "3.19",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.19",
+              "value": 3.19
+            },
+            {
+              "latex": "\\textbf{686.8}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "686.8",
+              "value": 686.8,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "89.3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "89.3",
+              "value": 89.3
+            },
+            {
+              "latex": "1.44",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1.44",
+              "value": 1.44
+            },
+            {
+              "latex": "83.3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "83.3",
+              "value": 83.3
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "Vector",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Vector",
+              "value": "Vector"
+            },
+            {
+              "latex": "21.5",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "21.5",
+              "value": 21.5
+            },
+            {
+              "latex": "\\textbf{1.24}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1.24",
+              "value": 1.24,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "773.0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "773.0",
+              "value": 773.0
+            },
+            {
+              "latex": "\\underline{92.9}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "92.9",
+              "value": 92.9,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "\\textbf{0.03}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.03",
+              "value": 0.03,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{57.0}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "57.0",
+              "value": 57.0,
+              "emphasis": "bold"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "MemRL$^{*}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "MemRL*",
+              "value": "MemRL*"
+            },
+            {
+              "latex": "32.0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "32.0",
+              "value": 32.0
+            },
+            {
+              "latex": "\\underline{1.31}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1.31",
+              "value": 1.31,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "730.9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "730.9",
+              "value": 730.9
+            },
+            {
+              "latex": "\\underline{92.9}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "92.9",
+              "value": 92.9,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "\\underline{0.04}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.04",
+              "value": 0.04,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "63.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "63.1",
+              "value": 63.1
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "GoS",
+              "value": "GoS"
+            },
+            {
+              "latex": "34.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "34.4",
+              "value": 34.4
+            },
+            {
+              "latex": "1.38",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1.38",
+              "value": 1.38
+            },
+            {
+              "latex": "\\underline{715.6}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "715.6",
+              "value": 715.6,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "\\textbf{93.6}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "93.6",
+              "value": 93.6,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "0.05",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.05",
+              "value": 0.05
+            },
+            {
+              "latex": "64.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "64.7",
+              "value": 64.7
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "SkillDAG",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillDAG",
+              "value": "SkillDAG"
+            },
+            {
+              "latex": "\\underline{36.8}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "36.8",
+              "value": 36.8,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "1.65",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1.65",
+              "value": 1.65
+            },
+            {
+              "latex": "780.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "780.4",
+              "value": 780.4
+            },
+            {
+              "latex": "\\textbf{93.6}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "93.6",
+              "value": 93.6,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "0.05",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.05",
+              "value": 0.05
+            },
+            {
+              "latex": "64.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "64.2",
+              "value": 64.2
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "SE-GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SE-GoS",
+              "value": "SE-GoS"
+            },
+            {
+              "latex": "\\textbf{38.1}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "38.1",
+              "value": 38.1,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "1.56",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1.56",
+              "value": 1.56
+            },
+            {
+              "latex": "749.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "749.1",
+              "value": 749.1
+            },
+            {
+              "latex": "\\textbf{93.6}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "93.6",
+              "value": 93.6,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "0.05",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.05",
+              "value": 0.05
+            },
+            {
+              "latex": "\\underline{62.3}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "62.3",
+              "value": 62.3,
+              "emphasis": "underline"
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "deepseek-v4-flash-0731",
+          "Vanilla",
+          46.2,
+          5.06,
+          771.4,
+          80.4,
+          1.81,
+          85.1
+        ],
+        [
+          "deepseek-v4-flash-0731",
+          "Vector",
+          38.7,
+          3.11,
+          790.7,
+          83.9,
+          0.04,
+          60.3
+        ],
+        [
+          "deepseek-v4-flash-0731",
+          "MemRL*",
+          49.6,
+          3.32,
+          803.1,
+          85.7,
+          0.05,
+          69.0
+        ],
+        [
+          "deepseek-v4-flash-0731",
+          "GoS",
+          52.4,
+          3.67,
+          843.8,
+          88.2,
+          0.07,
+          65.2
+        ],
+        [
+          "deepseek-v4-flash-0731",
+          "SkillDAG",
+          55.3,
+          3.62,
+          862.9,
+          90.4,
+          0.06,
+          66.8
+        ],
+        [
+          "deepseek-v4-flash-0731",
+          "SE-GoS",
+          59.4,
+          3.45,
+          883.7,
+          91.1,
+          0.07,
+          63.2
+        ],
+        [
+          "minimax-m2.7",
+          "Vanilla",
+          17.2,
+          0.94,
+          580.7,
+          47.1,
+          2.18,
+          88.6
+        ],
+        [
+          "minimax-m2.7",
+          "Vector",
+          10.4,
+          0.85,
+          552.9,
+          50.7,
+          0.07,
+          73.4
+        ],
+        [
+          "minimax-m2.7",
+          "MemRL*",
+          20.9,
+          0.91,
+          571.1,
+          55.0,
+          0.08,
+          80.6
+        ],
+        [
+          "minimax-m2.7",
+          "GoS",
+          18.7,
+          0.87,
+          502.5,
+          54.3,
+          0.07,
+          68.8
+        ],
+        [
+          "minimax-m2.7",
+          "SkillDAG",
+          27.3,
+          1.05,
+          560.2,
+          67.1,
+          0.09,
+          75.9
+        ],
+        [
+          "minimax-m2.7",
+          "SE-GoS",
+          28.5,
+          0.92,
+          572.4,
+          68.6,
+          0.08,
+          74.3
+        ],
+        [
+          "gpt-5.2-codex",
+          "Vanilla",
+          27.4,
+          3.19,
+          686.8,
+          89.3,
+          1.44,
+          83.3
+        ],
+        [
+          "gpt-5.2-codex",
+          "Vector",
+          21.5,
+          1.24,
+          773.0,
+          92.9,
+          0.03,
+          57.0
+        ],
+        [
+          "gpt-5.2-codex",
+          "MemRL*",
+          32.0,
+          1.31,
+          730.9,
+          92.9,
+          0.04,
+          63.1
+        ],
+        [
+          "gpt-5.2-codex",
+          "GoS",
+          34.4,
+          1.38,
+          715.6,
+          93.6,
+          0.05,
+          64.7
+        ],
+        [
+          "gpt-5.2-codex",
+          "SkillDAG",
+          36.8,
+          1.65,
+          780.4,
+          93.6,
+          0.05,
+          64.2
+        ],
+        [
+          "gpt-5.2-codex",
+          "SE-GoS",
+          38.1,
+          1.56,
+          749.1,
+          93.6,
+          0.05,
+          62.3
+        ]
+      ]
+    }
+  ]
+}

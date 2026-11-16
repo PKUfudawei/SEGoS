@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "success_reward": 0.9,
+  "semantic_k": 1,
+  "ppr_restart": 0.2,
+  "model_ids": [
+    "deepseek-v4-flash-0731",
+    "minimax-m2.7",
+    "gpt-5.2-codex"
+  ],
+  "updates": [
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "benchmark": "alfworld",
+  "protocol": "train420_valid_seen140",
+  "tasks": 140,
+  "attempts_per_task": 2,
+  "train_tasks": 420,
+  "max_steps": 30,
+  "retrieval": {
+    "seed_top_k": 5,
+    "top_n": 8,
+    "max_skill_chars": 2400,
+    "max_context_chars": 12000
+  },
+  "budget_reference": "https://arxiv.org/html/2604.05333v4#A2.T8"
+}

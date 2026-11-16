@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "table_number": 8,
+  "labels": [
+    "tab:hyperparams"
+  ],
+  "caption": "Hyperparameters of the primary SE-GoS configuration. Baseline differences are listed in Table tab:protocol_comparison.",
+  "caption_latex": "Hyperparameters of the primary SE-GoS configuration. Baseline differences are listed in Table~\\ref{tab:protocol_comparison}.",
+  "source": {
+    "file": "sections/appendix.tex",
+    "line": 105,
+    "table_sha256": "c5334e68071b00c7b282c1be75c1398b329274f8d52108c377986e59fd445ede"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Hyperparameter",
+        "Value",
+        "Role"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Hyperparameter",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Hyperparameter",
+              "value": "Hyperparameter"
+            },
+            {
+              "latex": "Value",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Value",
+              "value": "Value"
+            },
+            {
+              "latex": "Role",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Role",
+              "value": "Role"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "PPR restart $\\alpha$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "PPR restart α",
+              "value": "PPR restart α"
+            },
+            {
+              "latex": "0.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.2",
+              "value": 0.2
+            },
+            {
+              "latex": "Teleport probability (Eq.~\\ref{eq:ppr}).",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Teleport probability (Eq. eq:ppr).",
+              "value": "Teleport probability (Eq. eq:ppr)."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Reverse weights $\\gamma_r$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Reverse weights γ_r",
+              "value": "Reverse weights γ_r"
+            },
+            {
+              "latex": "dependency 1.0, workflow 0.5, semantic 0.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "dependency 1.0, workflow 0.5, semantic 0.2",
+              "value": "dependency 1.0, workflow 0.5, semantic 0.2"
+            },
+            {
+              "latex": "Reverse-traversal strength (Eq.~\\ref{eq:transition}).",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Reverse-traversal strength (Eq. eq:transition).",
+              "value": "Reverse-traversal strength (Eq. eq:transition)."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Lexical seeding",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Lexical seeding",
+              "value": "Lexical seeding"
+            },
+            {
+              "latex": "weighted token overlap on name, capability, desc., tags, tooling, I/O, examples, entrypoints",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "weighted token overlap on name, capability, desc., tags, tooling, I/O, examples, entrypoints",
+              "value": "weighted token overlap on name, capability, desc., tags, tooling, I/O, examples, entrypoints"
+            },
+            {
+              "latex": "Rank selected seeds lexically; normalize inverse-rank weights. No embedding.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Rank selected seeds lexically; normalize inverse-rank weights. No embedding.",
+              "value": "Rank selected seeds lexically; normalize inverse-rank weights. No embedding."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SkillsBench: $N$ / $K$ / budgets",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillsBench: N / K / budgets",
+              "value": "SkillsBench: N / K / budgets"
+            },
+            {
+              "latex": "5 / 4 / 1{,}800+9{,}000 chars",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "5 / 4 / 1,800+9,000 chars",
+              "value": "5 / 4 / 1,800+9,000 chars"
+            },
+            {
+              "latex": "Released lightweight GoS configuration.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Released lightweight GoS configuration.",
+              "value": "Released lightweight GoS configuration."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "ALFWorld: $N$ / $K$ / budgets",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "ALFWorld: N / K / budgets",
+              "value": "ALFWorld: N / K / budgets"
+            },
+            {
+              "latex": "8 / 5 / 2{,}400+12{,}000 chars",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "8 / 5 / 2,400+12,000 chars",
+              "value": "8 / 5 / 2,400+12,000 chars"
+            },
+            {
+              "latex": "Experimental configuration following GoS v4.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Experimental configuration following GoS v4.",
+              "value": "Experimental configuration following GoS v4."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Reinforcement rate $\\eta$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Reinforcement rate η",
+              "value": "Reinforcement rate η"
+            },
+            {
+              "latex": "0.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.1",
+              "value": 0.1
+            },
+            {
+              "latex": "Hebbian step (Eq.~\\ref{eq:reinforce}).",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Hebbian step (Eq. eq:reinforce).",
+              "value": "Hebbian step (Eq. eq:reinforce)."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Induction weight",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Induction weight",
+              "value": "Induction weight"
+            },
+            {
+              "latex": "$0.6 + 0.05(c^{\\text{workflow}}_{uv}-1)$, cap $0.9$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.6 + 0.05(c^workflow_uv-1), cap 0.9",
+              "value": "0.6 + 0.05(c^workflow_uv-1), cap 0.9"
+            },
+            {
+              "latex": "Workflow-edge weight. Query-level counts follow Section~\\ref{sec:evolution}.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Workflow-edge weight. Query-level counts follow Section sec:evolution.",
+              "value": "Workflow-edge weight. Query-level counts follow Section sec:evolution."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Observation threshold $\\theta_{\\text{obs}}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Observation threshold θ_obs",
+              "value": "Observation threshold θ_obs"
+            },
+            {
+              "latex": "2 distinct tasks",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2 distinct tasks",
+              "value": "2 distinct tasks"
+            },
+            {
+              "latex": "Surface count before attenuating a never-used head. Multiple queries in one task count once.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Surface count before attenuating a never-used head. Multiple queries in one task count once.",
+              "value": "Surface count before attenuating a never-used head. Multiple queries in one task count once."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Semantic attenuation factor",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Semantic attenuation factor",
+              "value": "Semantic attenuation factor"
+            },
+            {
+              "latex": "0.5",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.5",
+              "value": 0.5
+            },
+            {
+              "latex": "One-time L2 scaling of incoming semantic weights. No edge deletion or floor.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "One-time L2 scaling of incoming semantic weights. No edge deletion or floor.",
+              "value": "One-time L2 scaling of incoming semantic weights. No edge deletion or floor."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Paraphrase count $p$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Paraphrase count p",
+              "value": "Paraphrase count p"
+            },
+            {
+              "latex": "2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2",
+              "value": 2
+            },
+            {
+              "latex": "Paraphrase variants per edited description.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Paraphrase variants per edited description.",
+              "value": "Paraphrase variants per edited description."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Node-update threshold $n_{\\text{rank}}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Node-update threshold n_rank",
+              "value": "Node-update threshold n_rank"
+            },
+            {
+              "latex": "3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3",
+              "value": 3
+            },
+            {
+              "latex": "A used skill is targeted if ranked worse than this.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "A used skill is targeted if ranked worse than this.",
+              "value": "A used skill is targeted if ranked worse than this."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Node-update miss source",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Node-update miss source",
+              "value": "Node-update miss source"
+            },
+            {
+              "latex": "\\texttt{failed} (default)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "failed (default)",
+              "value": "failed (default)"
+            },
+            {
+              "latex": "Queries from trials with reward $< r_{\\text{success}}$.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Queries from trials with reward < r_success.",
+              "value": "Queries from trials with reward < r_success."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Success threshold $r_{\\text{success}}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Success threshold r_success",
+              "value": "Success threshold r_success"
+            },
+            {
+              "latex": "0.9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.9",
+              "value": 0.9
+            },
+            {
+              "latex": "Success cut for topology/node miss filters.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Success cut for topology/node miss filters.",
+              "value": "Success cut for topology/node miss filters."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Avoid threshold $\\theta_{\\text{avoid}}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Avoid threshold θ_avoid",
+              "value": "Avoid threshold θ_avoid"
+            },
+            {
+              "latex": "1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1",
+              "value": 1
+            },
+            {
+              "latex": "Failed co-occurrences (none successful) for avoid edge.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Failed co-occurrences (none successful) for avoid edge.",
+              "value": "Failed co-occurrences (none successful) for avoid edge."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Avoid retraction threshold $\\theta_{\\text{retract}}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Avoid retraction threshold θ_retract",
+              "value": "Avoid retraction threshold θ_retract"
+            },
+            {
+              "latex": "1 successful task",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1 successful task",
+              "value": "1 successful task"
+            },
+            {
+              "latex": "Successful co-use required to retract an existing avoid edge (L1).",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Successful co-use required to retract an existing avoid edge (L1).",
+              "value": "Successful co-use required to retract an existing avoid edge (L1)."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Dependency threshold $\\zeta$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Dependency threshold ζ",
+              "value": "Dependency threshold ζ"
+            },
+            {
+              "latex": "0.6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.6",
+              "value": 0.6
+            },
+            {
+              "latex": "I/O schema overlap for dep certification.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "I/O schema overlap for dep certification.",
+              "value": "I/O schema overlap for dep certification."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "No-eviction guard (node update)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "No-eviction guard (node update)",
+              "value": "No-eviction guard (node update)"
+            },
+            {
+              "latex": "\\texttt{on} (default)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "on (default)",
+              "value": "on (default)"
+            },
+            {
+              "latex": "Across all recorded queries, preserve top-$N$ skills that were used in any recorded training trial.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Across all recorded queries, preserve top-N skills that were used in any recorded training trial.",
+              "value": "Across all recorded queries, preserve top-N skills that were used in any recorded training trial."
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Description edit budget",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Description edit budget",
+              "value": "Description edit budget"
+            },
+            {
+              "latex": "$\\le$ 50 tokens",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "≤ 50 tokens",
+              "value": "≤ 50 tokens"
+            },
+            {
+              "latex": "Cap on description edits.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Cap on description edits.",
+              "value": "Cap on description edits."
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "PPR restart α",
+          0.2,
+          "Teleport probability (Eq. eq:ppr)."
+        ],
+        [
+          "Reverse weights γ_r",
+          "dependency 1.0, workflow 0.5, semantic 0.2",
+          "Reverse-traversal strength (Eq. eq:transition)."
+        ],
+        [
+          "Lexical seeding",
+          "weighted token overlap on name, capability, desc., tags, tooling, I/O, examples, entrypoints",
+          "Rank selected seeds lexically; normalize inverse-rank weights. No embedding."
+        ],
+        [
+          "SkillsBench: N / K / budgets",
+          "5 / 4 / 1,800+9,000 chars",
+          "Released lightweight GoS configuration."
+        ],
+        [
+          "ALFWorld: N / K / budgets",
+          "8 / 5 / 2,400+12,000 chars",
+          "Experimental configuration following GoS v4."
+        ],
+        [
+          "Reinforcement rate η",
+          0.1,
+          "Hebbian step (Eq. eq:reinforce)."
+        ],
+        [
+          "Induction weight",
+          "0.6 + 0.05(c^workflow_uv-1), cap 0.9",
+          "Workflow-edge weight. Query-level counts follow Section sec:evolution."
+        ],
+        [
+          "Observation threshold θ_obs",
+          "2 distinct tasks",
+          "Surface count before attenuating a never-used head. Multiple queries in one task count once."
+        ],
+        [
+          "Semantic attenuation factor",
+          0.5,
+          "One-time L2 scaling of incoming semantic weights. No edge deletion or floor."
+        ],
+        [
+          "Paraphrase count p",
+          2,
+          "Paraphrase variants per edited description."
+        ],
+        [
+          "Node-update threshold n_rank",
+          3,
+          "A used skill is targeted if ranked worse than this."
+        ],
+        [
+          "Node-update miss source",
+          "failed (default)",
+          "Queries from trials with reward < r_success."
+        ],
+        [
+          "Success threshold r_success",
+          0.9,
+          "Success cut for topology/node miss filters."
+        ],
+        [
+          "Avoid threshold θ_avoid",
+          1,
+          "Failed co-occurrences (none successful) for avoid edge."
+        ],
+        [
+          "Avoid retraction threshold θ_retract",
+          "1 successful task",
+          "Successful co-use required to retract an existing avoid edge (L1)."
+        ],
+        [
+          "Dependency threshold ζ",
+          0.6,
+          "I/O schema overlap for dep certification."
+        ],
+        [
+          "No-eviction guard (node update)",
+          "on (default)",
+          "Across all recorded queries, preserve top-N skills that were used in any recorded training trial."
+        ],
+        [
+          "Description edit budget",
+          "≤ 50 tokens",
+          "Cap on description edits."
+        ]
+      ]
+    }
+  ]
+}

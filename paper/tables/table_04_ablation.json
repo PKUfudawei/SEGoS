@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "table_number": 4,
+  "labels": [
+    "tab:ablation"
+  ],
+  "caption": "Component ablations and structural controls on full87 (n=174 per cell). The first eight rows share the semantic-only cold start. The last two modify full SE-GoS. Metrics follow Table tab:main. Bold/underline mark best/second-best.",
+  "caption_latex": "\\textbf{Component ablations and structural controls} on full87 ($n{=}174$ per cell). The first eight rows share the semantic-only cold start. The last two modify full SE-GoS. Metrics follow Table~\\ref{tab:main}. Bold/underline mark best/second-best.",
+  "source": {
+    "file": "sections/experiment.tex",
+    "line": 113,
+    "table_sha256": "36e03c6a4ff788e3603f350617d6ea28ae774d5bebc0657f145cc8446b10b068"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Configuration",
+        "R ↑",
+        "T ↓",
+        "S ↓"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Configuration",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Configuration",
+              "value": "Configuration"
+            },
+            {
+              "latex": "R $\\uparrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "R ↑",
+              "value": "R ↑"
+            },
+            {
+              "latex": "T $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "T ↓",
+              "value": "T ↓"
+            },
+            {
+              "latex": "S $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "S ↓",
+              "value": "S ↓"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SE-GoS cold-start",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SE-GoS cold-start",
+              "value": "SE-GoS cold-start"
+            },
+            {
+              "latex": "50.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "50.8",
+              "value": 50.8
+            },
+            {
+              "latex": "3.74",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.74",
+              "value": 3.74
+            },
+            {
+              "latex": "829.1\\ablationrowmark{0}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "829.1",
+              "value": 829.1
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "$+$Topology",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+Topology",
+              "value": "+Topology"
+            },
+            {
+              "latex": "54.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "54.1",
+              "value": 54.1
+            },
+            {
+              "latex": "3.37",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.37",
+              "value": 3.37
+            },
+            {
+              "latex": "\\underline{781.8}\\ablationrowmark{1}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "781.8",
+              "value": 781.8,
+              "emphasis": "underline"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "$+$Edge",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+Edge",
+              "value": "+Edge"
+            },
+            {
+              "latex": "57.3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "57.3",
+              "value": 57.3
+            },
+            {
+              "latex": "\\underline{3.35}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.35",
+              "value": 3.35,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "807.9\\ablationrowmark{2}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "807.9",
+              "value": 807.9
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "$+$Node",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+Node",
+              "value": "+Node"
+            },
+            {
+              "latex": "53.6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "53.6",
+              "value": 53.6
+            },
+            {
+              "latex": "3.86",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.86",
+              "value": 3.86
+            },
+            {
+              "latex": "883.3\\ablationrowmark{3}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "883.3",
+              "value": 883.3
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "$+$Topology$+$Edge",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+Topology+Edge",
+              "value": "+Topology+Edge"
+            },
+            {
+              "latex": "58.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "58.8",
+              "value": 58.8
+            },
+            {
+              "latex": "3.66",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.66",
+              "value": 3.66
+            },
+            {
+              "latex": "799.4\\ablationrowmark{4}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "799.4",
+              "value": 799.4
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "$+$Topology$+$Node",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+Topology+Node",
+              "value": "+Topology+Node"
+            },
+            {
+              "latex": "55.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "55.8",
+              "value": 55.8
+            },
+            {
+              "latex": "\\textbf{3.17}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.17",
+              "value": 3.17,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "844.5\\ablationrowmark{5}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "844.5",
+              "value": 844.5
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "$+$Edge$+$Node",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+Edge+Node",
+              "value": "+Edge+Node"
+            },
+            {
+              "latex": "\\underline{59.1}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "59.1",
+              "value": 59.1,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "3.43",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.43",
+              "value": 3.43
+            },
+            {
+              "latex": "\\textbf{771.5}\\ablationrowmark{6}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "771.5",
+              "value": 771.5,
+              "emphasis": "bold"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "$+$Topology$+$Edge$+$Node (SE-GoS)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+Topology+Edge+Node (SE-GoS)",
+              "value": "+Topology+Edge+Node (SE-GoS)"
+            },
+            {
+              "latex": "\\textbf{59.4}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "59.4",
+              "value": 59.4,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "3.45",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.45",
+              "value": 3.45
+            },
+            {
+              "latex": "883.7\\ablationrowmark{7}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "883.7",
+              "value": 883.7
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SE-GoS with shuffled edges",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SE-GoS with shuffled edges",
+              "value": "SE-GoS with shuffled edges"
+            },
+            {
+              "latex": "42.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "42.4",
+              "value": 42.4
+            },
+            {
+              "latex": "3.81",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.81",
+              "value": 3.81
+            },
+            {
+              "latex": "891.2\\ablationrowmark{8}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "891.2",
+              "value": 891.2
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SE-GoS without avoid filtering",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SE-GoS without avoid filtering",
+              "value": "SE-GoS without avoid filtering"
+            },
+            {
+              "latex": "57.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "57.1",
+              "value": 57.1
+            },
+            {
+              "latex": "3.41",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.41",
+              "value": 3.41
+            },
+            {
+              "latex": "850.6\\ablationrowmark{9}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "850.6",
+              "value": 850.6
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "SE-GoS cold-start",
+          50.8,
+          3.74,
+          829.1
+        ],
+        [
+          "+Topology",
+          54.1,
+          3.37,
+          781.8
+        ],
+        [
+          "+Edge",
+          57.3,
+          3.35,
+          807.9
+        ],
+        [
+          "+Node",
+          53.6,
+          3.86,
+          883.3
+        ],
+        [
+          "+Topology+Edge",
+          58.8,
+          3.66,
+          799.4
+        ],
+        [
+          "+Topology+Node",
+          55.8,
+          3.17,
+          844.5
+        ],
+        [
+          "+Edge+Node",
+          59.1,
+          3.43,
+          771.5
+        ],
+        [
+          "+Topology+Edge+Node (SE-GoS)",
+          59.4,
+          3.45,
+          883.7
+        ],
+        [
+          "SE-GoS with shuffled edges",
+          42.4,
+          3.81,
+          891.2
+        ],
+        [
+          "SE-GoS without avoid filtering",
+          57.1,
+          3.41,
+          850.6
+        ]
+      ]
+    }
+  ]
+}

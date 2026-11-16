@@ -1,0 +1,48 @@
+{
+  "randomization": {
+    "seed": 42,
+    "source_filename": "segos_evolved_skills1000_round1.json",
+    "source_sha256": "07f76cfc1a92d4725c199aa979fb4581b7799c54d9af914ef2ef88bf14fea5bc",
+    "scope": "all edges, including semantic/workflow/avoid/dependency if present",
+    "algorithm": "random.Random(seed).sample(node_names_in_input_order, 2), per edge in input order",
+    "self_loops_allowed": false,
+    "duplicate_edges_allowed": true,
+    "degree_preserving": false,
+    "annotation_note": "Only endpoints are randomized. Original edge descriptions, confidence and evidence counts are retained as source annotations; they are not evidence for the new connections."
+  },
+  "original_metadata": {
+    "skillset_name": "skills_1000",
+    "source": "official HF prebuilt workspace (gos_workspace_skills_1000_v1)",
+    "dep_edges": 0,
+    "semantic_edges": 863,
+    "semantic_k": 1,
+    "sem_metric": "token",
+    "is_edges": 0,
+    "total_edges": 863,
+    "edge_count": 1118
+  },
+  "node_count": 1000,
+  "edge_count": 1118,
+  "edge_type_counts_before": {
+    "avoid": 27,
+    "semantic": 863,
+    "workflow": 228
+  },
+  "edge_type_counts_after": {
+    "avoid": 27,
+    "semantic": 863,
+    "workflow": 228
+  },
+  "changed_endpoint_pairs": 1118,
+  "unchanged_endpoint_pairs": 0,
+  "duplicate_source_target_type_count": 0,
+  "checks": {
+    "nodes_identical": true,
+    "edge_count_preserved": true,
+    "edge_payloads_preserved_in_order": true,
+    "edge_type_counts_preserved": true,
+    "no_self_loops": true,
+    "all_endpoints_valid": true
+  },
+  "output_sha256": "dc0e1fcca895c9ed7d2e7a37a1cebaa5c689cdb1fb10cd86a83e85e754764a6c"
+}

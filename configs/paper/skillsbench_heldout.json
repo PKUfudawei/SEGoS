@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "success_reward": 0.9,
+  "semantic_k": 1,
+  "ppr_restart": 0.2,
+  "model_ids": [
+    "deepseek-v4-flash-0731",
+    "minimax-m2.7",
+    "gpt-5.2-codex"
+  ],
+  "updates": [
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "benchmark": "skillsbench",
+  "protocol": "heldout",
+  "tasks": 37,
+  "attempts_per_task": 2,
+  "train_tasks": 50,
+  "split": "splits/train50_eval37.json",
+  "retrieval": {
+    "seed_top_k": 4,
+    "top_n": 5,
+    "max_skill_chars": 1800,
+    "max_context_chars": 9000
+  }
+}

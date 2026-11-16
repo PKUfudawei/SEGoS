@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "table_number": 12,
+  "labels": [
+    "tab:heldout_avoid"
+  ],
+  "caption": "Held-out avoid-filtering ablation (n=74 attempts per condition).",
+  "caption_latex": "Held-out avoid-filtering ablation ($n{=}74$ attempts per condition).",
+  "source": {
+    "file": "sections/appendix.tex",
+    "line": 332,
+    "table_sha256": "7017c063bff42b4725e9bf07e83f9676ed2b9d6f34f3a84ac7e6666fdc511f53"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Protocol",
+        "With avoid R (%)",
+        "Without avoid R (%)",
+        "Change (%)"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Protocol",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Protocol",
+              "value": "Protocol"
+            },
+            {
+              "latex": "With avoid R (\\%)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "With avoid R (%)",
+              "value": "With avoid R (%)"
+            },
+            {
+              "latex": "Without avoid R (\\%)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Without avoid R (%)",
+              "value": "Without avoid R (%)"
+            },
+            {
+              "latex": "Change (\\%)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Change (%)",
+              "value": "Change (%)"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Held-out",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Held-out",
+              "value": "Held-out"
+            },
+            {
+              "latex": "58.3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "58.3",
+              "value": 58.3
+            },
+            {
+              "latex": "57.0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "57.0",
+              "value": 57.0
+            },
+            {
+              "latex": "$-1.3$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "-1.3",
+              "value": -1.3
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "Held-out",
+          58.3,
+          57.0,
+          -1.3
+        ]
+      ]
+    }
+  ]
+}

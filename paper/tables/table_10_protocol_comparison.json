@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "table_number": 10,
+  "labels": [
+    "tab:protocol_comparison"
+  ],
+  "caption": "Configuration comparison on SkillsBench.",
+  "caption_latex": "Configuration comparison on SkillsBench.",
+  "source": {
+    "file": "sections/appendix.tex",
+    "line": 248,
+    "table_sha256": "5c2d0b748cf5eb9b36323e0e7ebc412aa3d7cb37bec2a4f623625726bbdccfc0"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Property",
+        "Primary SE-GoS",
+        "SkillDAG"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Property",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Property",
+              "value": "Property"
+            },
+            {
+              "latex": "Primary SE-GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Primary SE-GoS",
+              "value": "Primary SE-GoS"
+            },
+            {
+              "latex": "SkillDAG",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillDAG",
+              "value": "SkillDAG"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Initial graph",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Initial graph",
+              "value": "Initial graph"
+            },
+            {
+              "latex": "863 deterministic semantic edges",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "863 deterministic semantic edges",
+              "value": "863 deterministic semantic edges"
+            },
+            {
+              "latex": "Official typed graph, 2,360 edges",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Official typed graph, 2,360 edges",
+              "value": "Official typed graph, 2,360 edges"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Execution evidence",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Execution evidence",
+              "value": "Execution evidence"
+            },
+            {
+              "latex": "Own traces",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Own traces",
+              "value": "Own traces"
+            },
+            {
+              "latex": "Own traces",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Own traces",
+              "value": "Own traces"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Update schedule",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Update schedule",
+              "value": "Update schedule"
+            },
+            {
+              "latex": "Offline batch",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Offline batch",
+              "value": "Offline batch"
+            },
+            {
+              "latex": "Online editing during experience collection",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Online editing during experience collection",
+              "value": "Online editing during experience collection"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Retrieval configuration",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Retrieval configuration",
+              "value": "Retrieval configuration"
+            },
+            {
+              "latex": "seed-$K$=4, top-$N$=5. PPR restart 0.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "seed-K=4, top-N=5. PPR restart 0.2",
+              "value": "seed-K=4, top-N=5. PPR restart 0.2"
+            },
+            {
+              "latex": "top-$k$=5, neighbor depth 2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "top-k=5, neighbor depth 2",
+              "value": "top-k=5, neighbor depth 2"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Hydration",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Hydration",
+              "value": "Hydration"
+            },
+            {
+              "latex": "1,800 chars/skill, 9,000 total",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1,800 chars/skill, 9,000 total",
+              "value": "1,800 chars/skill, 9,000 total"
+            },
+            {
+              "latex": "Native interface under shared harness",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Native interface under shared harness",
+              "value": "Native interface under shared harness"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Tuning",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Tuning",
+              "value": "Tuning"
+            },
+            {
+              "latex": "Fixed reported settings. Component ablation",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Fixed reported settings. Component ablation",
+              "value": "Fixed reported settings. Component ablation"
+            },
+            {
+              "latex": "Recommended settings",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Recommended settings",
+              "value": "Recommended settings"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Held-out adaptation",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Held-out adaptation",
+              "value": "Held-out adaptation"
+            },
+            {
+              "latex": "Train50. Freeze. Evaluate37",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Train50. Freeze. Evaluate37",
+              "value": "Train50. Freeze. Evaluate37"
+            },
+            {
+              "latex": "Train50. Freeze. Evaluate37",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Train50. Freeze. Evaluate37",
+              "value": "Train50. Freeze. Evaluate37"
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "Initial graph",
+          "863 deterministic semantic edges",
+          "Official typed graph, 2,360 edges"
+        ],
+        [
+          "Execution evidence",
+          "Own traces",
+          "Own traces"
+        ],
+        [
+          "Update schedule",
+          "Offline batch",
+          "Online editing during experience collection"
+        ],
+        [
+          "Retrieval configuration",
+          "seed-K=4, top-N=5. PPR restart 0.2",
+          "top-k=5, neighbor depth 2"
+        ],
+        [
+          "Hydration",
+          "1,800 chars/skill, 9,000 total",
+          "Native interface under shared harness"
+        ],
+        [
+          "Tuning",
+          "Fixed reported settings. Component ablation",
+          "Recommended settings"
+        ],
+        [
+          "Held-out adaptation",
+          "Train50. Freeze. Evaluate37",
+          "Train50. Freeze. Evaluate37"
+        ]
+      ]
+    }
+  ]
+}

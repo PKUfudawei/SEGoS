@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "table_number": 9,
+  "labels": [
+    "tab:heldout_split"
+  ],
+  "caption": "SkillsBench held-out partition by domain. Evolution tasks supply execution feedback for graph updates. Held-out tasks evaluate the frozen graphs. The same partition is used for SE-GoS and SkillDAG.",
+  "caption_latex": "\\textbf{SkillsBench held-out partition by domain.} Evolution tasks supply execution feedback for graph updates. Held-out tasks evaluate the frozen graphs. The same partition is used for SE-GoS and SkillDAG.",
+  "source": {
+    "file": "sections/appendix.tex",
+    "line": 202,
+    "table_sha256": "7415abfb2f2d86beee49dd897c09bf512f323c9706c61c0568da93da3f02c23f"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Domain",
+        "Evolution",
+        "Held-out evaluation",
+        "Total"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Domain",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Domain",
+              "value": "Domain"
+            },
+            {
+              "latex": "Evolution",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Evolution",
+              "value": "Evolution"
+            },
+            {
+              "latex": "Held-out evaluation",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Held-out evaluation",
+              "value": "Held-out evaluation"
+            },
+            {
+              "latex": "Total",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Total",
+              "value": "Total"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Cybersecurity",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Cybersecurity",
+              "value": "Cybersecurity"
+            },
+            {
+              "latex": "4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "4",
+              "value": 4
+            },
+            {
+              "latex": "3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3",
+              "value": 3
+            },
+            {
+              "latex": "7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "7",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Finance and economics",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Finance and economics",
+              "value": "Finance and economics"
+            },
+            {
+              "latex": "5",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "5",
+              "value": 5
+            },
+            {
+              "latex": "4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "4",
+              "value": 4
+            },
+            {
+              "latex": "9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "9",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Industrial and physical systems",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Industrial and physical systems",
+              "value": "Industrial and physical systems"
+            },
+            {
+              "latex": "8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "8",
+              "value": 8
+            },
+            {
+              "latex": "6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "6",
+              "value": 6
+            },
+            {
+              "latex": "14",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "14",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Mathematics and formal reasoning",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Mathematics and formal reasoning",
+              "value": "Mathematics and formal reasoning"
+            },
+            {
+              "latex": "5",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "5",
+              "value": 5
+            },
+            {
+              "latex": "3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3",
+              "value": 3
+            },
+            {
+              "latex": "8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "8",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Media and content production",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Media and content production",
+              "value": "Media and content production"
+            },
+            {
+              "latex": "3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3",
+              "value": 3
+            },
+            {
+              "latex": "2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2",
+              "value": 2
+            },
+            {
+              "latex": "5",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "5",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Natural science",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Natural science",
+              "value": "Natural science"
+            },
+            {
+              "latex": "8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "8",
+              "value": 8
+            },
+            {
+              "latex": "6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "6",
+              "value": 6
+            },
+            {
+              "latex": "14",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "14",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Office and white-collar work",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Office and white-collar work",
+              "value": "Office and white-collar work"
+            },
+            {
+              "latex": "8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "8",
+              "value": 8
+            },
+            {
+              "latex": "6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "6",
+              "value": 6
+            },
+            {
+              "latex": "14",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "14",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Software engineering",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Software engineering",
+              "value": "Software engineering"
+            },
+            {
+              "latex": "9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "9",
+              "value": 9
+            },
+            {
+              "latex": "7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "7",
+              "value": 7
+            },
+            {
+              "latex": "16",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "16",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Total",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Total",
+              "value": "Total"
+            },
+            {
+              "latex": "50",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "50",
+              "value": 50
+            },
+            {
+              "latex": "37",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "37",
+              "value": 37
+            },
+            {
+              "latex": "87",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "87",
+              "value": 87
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "Cybersecurity",
+          4,
+          3,
+          7
+        ],
+        [
+          "Finance and economics",
+          5,
+          4,
+          9
+        ],
+        [
+          "Industrial and physical systems",
+          8,
+          6,
+          14
+        ],
+        [
+          "Mathematics and formal reasoning",
+          5,
+          3,
+          8
+        ],
+        [
+          "Media and content production",
+          3,
+          2,
+          5
+        ],
+        [
+          "Natural science",
+          8,
+          6,
+          14
+        ],
+        [
+          "Office and white-collar work",
+          8,
+          6,
+          14
+        ],
+        [
+          "Software engineering",
+          9,
+          7,
+          16
+        ],
+        [
+          "Total",
+          50,
+          37,
+          87
+        ]
+      ]
+    }
+  ]
+}

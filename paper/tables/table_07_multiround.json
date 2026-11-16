@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "table_number": 7,
+  "labels": [
+    "tab:multiround",
+    "tab:multiround_graphs"
+  ],
+  "caption": "Multi-round evolution (174 attempts per round). All graphs contain 1,000 nodes and no alternative edges. Node edits count description updates within each round. Metrics follow Table tab:main.",
+  "caption_latex": "\\textbf{Multi-round evolution} (174 attempts per round). All graphs contain 1,000 nodes and no alternative edges. Node edits count description updates within each round. Metrics follow Table~\\ref{tab:main}.",
+  "source": {
+    "file": "sections/experiment.tex",
+    "line": 212,
+    "table_sha256": "f972da79895bd4e3406c5cd09388bfc58b4f45d91cd1c6357ed6ceb121d02822"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Round",
+        "R ↑",
+        "T ↓",
+        "S ↓",
+        "Node edits",
+        "Semantic",
+        "Workflow",
+        "Dependency",
+        "Avoid",
+        "Total edges"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "\\multicolumn{3}{c}{Performance}",
+              "row_span": 1,
+              "column_span": 3,
+              "text": "Performance",
+              "value": "Performance"
+            },
+            {
+              "latex": "\\multicolumn{6}{c}{Graph statistics}",
+              "row_span": 1,
+              "column_span": 6,
+              "text": "Graph statistics",
+              "value": "Graph statistics"
+            }
+          ]
+        },
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Round",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Round",
+              "value": "Round"
+            },
+            {
+              "latex": "R $\\uparrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "R ↑",
+              "value": "R ↑"
+            },
+            {
+              "latex": "T $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "T ↓",
+              "value": "T ↓"
+            },
+            {
+              "latex": "S $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "S ↓",
+              "value": "S ↓"
+            },
+            {
+              "latex": "Node edits",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Node edits",
+              "value": "Node edits"
+            },
+            {
+              "latex": "Semantic",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Semantic",
+              "value": "Semantic"
+            },
+            {
+              "latex": "Workflow",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Workflow",
+              "value": "Workflow"
+            },
+            {
+              "latex": "Dependency",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Dependency",
+              "value": "Dependency"
+            },
+            {
+              "latex": "Avoid",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Avoid",
+              "value": "Avoid"
+            },
+            {
+              "latex": "Total edges",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Total edges",
+              "value": "Total edges"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "0 (cold-start)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0 (cold-start)",
+              "value": "0 (cold-start)"
+            },
+            {
+              "latex": "50.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "50.8",
+              "value": 50.8
+            },
+            {
+              "latex": "3.74",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.74",
+              "value": 3.74
+            },
+            {
+              "latex": "\\underline{829.1}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "829.1",
+              "value": 829.1,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "--",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "--",
+              "value": "--"
+            },
+            {
+              "latex": "863",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "863",
+              "value": 863
+            },
+            {
+              "latex": "0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0",
+              "value": 0
+            },
+            {
+              "latex": "0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0",
+              "value": 0
+            },
+            {
+              "latex": "0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0",
+              "value": 0
+            },
+            {
+              "latex": "863",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "863",
+              "value": 863
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1",
+              "value": 1
+            },
+            {
+              "latex": "\\underline{59.4}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "59.4",
+              "value": 59.4,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "\\textbf{3.45}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.45",
+              "value": 3.45,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "883.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "883.7",
+              "value": 883.7
+            },
+            {
+              "latex": "6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "6",
+              "value": 6
+            },
+            {
+              "latex": "863",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "863",
+              "value": 863
+            },
+            {
+              "latex": "228",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "228",
+              "value": 228
+            },
+            {
+              "latex": "0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0",
+              "value": 0
+            },
+            {
+              "latex": "27",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "27",
+              "value": 27
+            },
+            {
+              "latex": "1,118",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1,118",
+              "value": 1118
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2",
+              "value": 2
+            },
+            {
+              "latex": "\\textbf{59.8}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "59.8",
+              "value": 59.8,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\underline{3.66}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.66",
+              "value": 3.66,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "\\textbf{813.9}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "813.9",
+              "value": 813.9,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "2",
+              "value": 2
+            },
+            {
+              "latex": "863",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "863",
+              "value": 863
+            },
+            {
+              "latex": "491",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "491",
+              "value": 491
+            },
+            {
+              "latex": "1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1",
+              "value": 1
+            },
+            {
+              "latex": "20",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "20",
+              "value": 20
+            },
+            {
+              "latex": "1,375",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1,375",
+              "value": 1375
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3",
+              "value": 3
+            },
+            {
+              "latex": "54.0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "54.0",
+              "value": 54.0
+            },
+            {
+              "latex": "3.71",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.71",
+              "value": 3.71
+            },
+            {
+              "latex": "850.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "850.8",
+              "value": 850.8
+            },
+            {
+              "latex": "4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "4",
+              "value": 4
+            },
+            {
+              "latex": "863",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "863",
+              "value": 863
+            },
+            {
+              "latex": "594",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "594",
+              "value": 594
+            },
+            {
+              "latex": "1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1",
+              "value": 1
+            },
+            {
+              "latex": "44",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "44",
+              "value": 44
+            },
+            {
+              "latex": "1,502",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1,502",
+              "value": 1502
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "0 (cold-start)",
+          50.8,
+          3.74,
+          829.1,
+          "--",
+          863,
+          0,
+          0,
+          0,
+          863
+        ],
+        [
+          1,
+          59.4,
+          3.45,
+          883.7,
+          6,
+          863,
+          228,
+          0,
+          27,
+          1118
+        ],
+        [
+          2,
+          59.8,
+          3.66,
+          813.9,
+          2,
+          863,
+          491,
+          1,
+          20,
+          1375
+        ],
+        [
+          3,
+          54.0,
+          3.71,
+          850.8,
+          4,
+          863,
+          594,
+          1,
+          44,
+          1502
+        ]
+      ]
+    }
+  ]
+}

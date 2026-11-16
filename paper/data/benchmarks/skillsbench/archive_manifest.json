@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "archive": "tasks.tar.gz",
+  "sha256": "7f7687cb295aca8d3892a2bd5eda6fd406b5c20a7a16f75dc6db9df1f1d00a79",
+  "bytes": 806141897,
+  "source_sha256": "5a663deee7af7da60fb04f46f68311dd18b16d0bb6aca4de85e81537ae59ed65",
+  "task_instructions": 87,
+  "task_dockerfiles": 93,
+  "retained_members": 12414,
+  "removed_members": [
+    "tasks/fix-druid-loophole-cve/environment/predownload/druid/.git/logs",
+    "tasks/fix-druid-loophole-cve/environment/predownload/druid/.git/logs/HEAD"
+  ],
+  "transformation": "Remove local Git reflogs from cached upstream checkouts and normalize archive owner fields. Retain all other member contents, paths, modes and link targets."
+}

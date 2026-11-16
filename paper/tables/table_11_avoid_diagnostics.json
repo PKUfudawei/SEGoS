@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "table_number": 11,
+  "labels": [
+    "tab:avoid_diagnostics"
+  ],
+  "caption": "Avoid-filtering diagnostics on retrieval queries recorded in evaluation trajectories. A task or attempt is affected if filtering changes the skill bundle for at least one of its queries.",
+  "caption_latex": "Avoid-filtering diagnostics on retrieval queries recorded in evaluation trajectories. A task or attempt is affected if filtering changes the skill bundle for at least one of its queries.",
+  "source": {
+    "file": "sections/appendix.tex",
+    "line": 318,
+    "table_sha256": "c61a3916a8ff45df779d0c4e2b69ac09acaec6c5cd0e9e2a1d3af84b8f98f7aa"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Protocol",
+        "Avoid/total edges",
+        "Affected tasks",
+        "Affected attempts",
+        "Affected queries"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Protocol",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Protocol",
+              "value": "Protocol"
+            },
+            {
+              "latex": "Avoid/total edges",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Avoid/total edges",
+              "value": "Avoid/total edges"
+            },
+            {
+              "latex": "Affected tasks",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Affected tasks",
+              "value": "Affected tasks"
+            },
+            {
+              "latex": "Affected attempts",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Affected attempts",
+              "value": "Affected attempts"
+            },
+            {
+              "latex": "Affected queries",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Affected queries",
+              "value": "Affected queries"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Full87",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Full87",
+              "value": "Full87"
+            },
+            {
+              "latex": "27/1,118",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "27/1,118",
+              "value": "27/1,118"
+            },
+            {
+              "latex": "4/87",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "4/87",
+              "value": "4/87"
+            },
+            {
+              "latex": "8/174",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "8/174",
+              "value": "8/174"
+            },
+            {
+              "latex": "12/177",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "12/177",
+              "value": "12/177"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Held-out",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Held-out",
+              "value": "Held-out"
+            },
+            {
+              "latex": "9/999",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "9/999",
+              "value": "9/999"
+            },
+            {
+              "latex": "1/37",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1/37",
+              "value": "1/37"
+            },
+            {
+              "latex": "1/74",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1/74",
+              "value": "1/74"
+            },
+            {
+              "latex": "1/73",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1/73",
+              "value": "1/73"
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "Full87",
+          "27/1,118",
+          "4/87",
+          "8/174",
+          "12/177"
+        ],
+        [
+          "Held-out",
+          "9/999",
+          "1/37",
+          "1/74",
+          "1/73"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "archive": "alfworld_textworld.tar.gz",
+  "bytes": 131237145,
+  "sha256": "d45d285fa795afd8d107ad0a8e8a97813a60e2342d990ee19558696924e87550",
+  "alfworld_version": "0.4.2",
+  "upstream_sources": [
+    {
+      "part": "json",
+      "bytes": 72018818,
+      "sha256": "25171f16e20ad7b048c47275c45b0babf3aa1cbab29cec97387922350a9844bc",
+      "url": "https://github.com/alfworld/alfworld/releases/download/0.2.2/json_2.1.1_json.zip"
+    },
+    {
+      "part": "pddl",
+      "bytes": 34881784,
+      "sha256": "913942ebed06659ea0da2f8122512d98bc6add30d84961ca803132d8fbcad585",
+      "url": "https://github.com/alfworld/alfworld/releases/download/0.2.2/json_2.1.1_pddl.zip"
+    },
+    {
+      "part": "tw-pddl",
+      "bytes": 36507267,
+      "sha256": "5df77ea759f2211a4106082839ddbbb790f1ba4e7d097ed732cf453f72aa36cf",
+      "url": "https://github.com/alfworld/alfworld/releases/download/0.4.2/json_2.1.3_tw-pddl.zip"
+    }
+  ],
+  "logic_and_license_source": "https://github.com/alfworld/alfworld/tree/1558ba46d078279ecb4c5d33a6cdffc96714a2d2",
+  "file_counts": {
+    "train": {
+      "game.tw-pddl": 3553,
+      "initial_state.pddl": 6374,
+      "traj_data.json": 6374
+    },
+    "valid_seen": {
+      "game.tw-pddl": 140,
+      "initial_state.pddl": 251,
+      "traj_data.json": 251
+    },
+    "valid_train": {
+      "game.tw-pddl": 200,
+      "initial_state.pddl": 200,
+      "traj_data.json": 200
+    },
+    "valid_unseen": {
+      "game.tw-pddl": 134,
+      "initial_state.pddl": 255,
+      "receps.json": 222,
+      "traj_data.json": 255
+    }
+  },
+  "packaging": "Combine official task JSON, PDDL and TextWorld game releases with the v0.4.2 logic files and MIT license. Preserve payload contents; normalize archive timestamps and ownership. Includes all released train, valid_train, valid_seen and valid_unseen assets.",
+  "paper_protocol": {
+    "training_episodes": 420,
+    "training_shuffle_seed": 2026,
+    "evaluation_split": "valid_seen",
+    "evaluation_episodes": 140,
+    "attempts_per_evaluation_episode": 2
+  }
+}

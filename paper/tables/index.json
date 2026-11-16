@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "tables": [
+    {
+      "table_number": 1,
+      "labels": [
+        "tab:positioning"
+      ],
+      "file": "table_01_positioning.json",
+      "caption": "Method positioning. ✓/-- indicate presence/absence of each property. Graph-based retrieval uses inter-item graph relations during retrieval. LLM-free graph initialization constructs the initial graph without LLM calls; -- also denotes methods without graph initialization. SkillGraph uses teacher-generated skill nodes even though its initial edges follow fixed rules. SE-GoS refers to the primary semantic-only initialization. Execution-driven updates use execution traces or outcomes to update system state. Training-free excludes neural-weight training of either the agent or retriever. Skill selection chooses library skills for the current task, whether or not their content is also edited. Edge-weight updates adapt numerical relation weights from feedback. Retrieval-description updates optimize descriptions for retrieval while leaving source skill content unchanged. Rows describe the original methods: MemRL retrieves episodic memories, and SkillOpt optimizes a shared skill document. Our experimental MemRL* adaptation selects skills."
+    },
+    {
+      "table_number": 2,
+      "labels": [
+        "tab:main"
+      ],
+      "file": "table_02_main.json",
+      "caption": "Main results. R: reward (%), T: input tokens (M), S: runtime (s). Bold/underline mark best/second-best for each backbone and benchmark. MemRL* denotes our adaptation of MemRL's episodic-memory retrieval to skill retrieval."
+    },
+    {
+      "table_number": 3,
+      "labels": [
+        "tab:heldout",
+        "tab:paired"
+      ],
+      "file": "table_03_heldout.json",
+      "caption": "Held-out performance and paired comparisons. Metrics follow Table tab:main. Bold/underline mark best/second-best in (a). MemRL* denotes our adaptation of MemRL's episodic-memory retrieval to skill retrieval. W/T/L denote task-level wins/ties/losses in (b)."
+    },
+    {
+      "table_number": 4,
+      "labels": [
+        "tab:ablation"
+      ],
+      "file": "table_04_ablation.json",
+      "caption": "Component ablations and structural controls on full87 (n=174 per cell). The first eight rows share the semantic-only cold start. The last two modify full SE-GoS. Metrics follow Table tab:main. Bold/underline mark best/second-best."
+    },
+    {
+      "table_number": 5,
+      "labels": [
+        "tab:workflow_support"
+      ],
+      "file": "table_05_workflow_support.json",
+      "caption": "Execution support for first-round workflow edges. Query observations count qualifying retrieval queries and determine induced workflow weights. Distinct-task support measures how many tasks supply that evidence, counting each task once."
+    },
+    {
+      "table_number": 6,
+      "labels": [
+        "tab:controls",
+        "tab:initialization_graphs"
+      ],
+      "file": "table_06_controls.json",
+      "caption": "Evolution from two initializations. Reward (%) and evolved graph statistics, using each initial graph's own trajectories. All graphs have 1,000 nodes. Node edits count changed retrieval descriptions. Sem./Work./Dep./Alt. denote semantic/workflow/dependency/alternative edges; dependency and alternative edges are inherited."
+    },
+    {
+      "table_number": 7,
+      "labels": [
+        "tab:multiround",
+        "tab:multiround_graphs"
+      ],
+      "file": "table_07_multiround.json",
+      "caption": "Multi-round evolution (174 attempts per round). All graphs contain 1,000 nodes and no alternative edges. Node edits count description updates within each round. Metrics follow Table tab:main."
+    },
+    {
+      "table_number": 8,
+      "labels": [
+        "tab:hyperparams"
+      ],
+      "file": "table_08_hyperparams.json",
+      "caption": "Hyperparameters of the primary SE-GoS configuration. Baseline differences are listed in Table tab:protocol_comparison."
+    },
+    {
+      "table_number": 9,
+      "labels": [
+        "tab:heldout_split"
+      ],
+      "file": "table_09_heldout_split.json",
+      "caption": "SkillsBench held-out partition by domain. Evolution tasks supply execution feedback for graph updates. Held-out tasks evaluate the frozen graphs. The same partition is used for SE-GoS and SkillDAG."
+    },
+    {
+      "table_number": 10,
+      "labels": [
+        "tab:protocol_comparison"
+      ],
+      "file": "table_10_protocol_comparison.json",
+      "caption": "Configuration comparison on SkillsBench."
+    },
+    {
+      "table_number": 11,
+      "labels": [
+        "tab:avoid_diagnostics"
+      ],
+      "file": "table_11_avoid_diagnostics.json",
+      "caption": "Avoid-filtering diagnostics on retrieval queries recorded in evaluation trajectories. A task or attempt is affected if filtering changes the skill bundle for at least one of its queries."
+    },
+    {
+      "table_number": 12,
+      "labels": [
+        "tab:heldout_avoid"
+      ],
+      "file": "table_12_heldout_avoid.json",
+      "caption": "Held-out avoid-filtering ablation (n=74 attempts per condition)."
+    }
+  ]
+}

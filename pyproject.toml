@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "segos"
+version = "0.1.0"
+description = "SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale."
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+license = { text = "Apache-2.0" }
+keywords = ["llm", "agents", "retrieval", "skills", "graph", "self-evolving"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+authors = [{ name = "Anonymous Authors" }]
+dependencies = ["PyYAML>=6,<7", "numpy>=1.26,<3", "tiktoken>=0.8,<1"]
+
+[project.urls]
+# GoS is the static baseline SE-GoS evolves from.
+GoS-paper = "https://arxiv.org/abs/2604.05333"
+
+[project.optional-dependencies]
+skillsbench = ["harbor==0.26.0", "hnswlib>=0.8,<0.9", "igraph>=1,<2"]
+alfworld = ["alfworld>=0.4.2", "tqdm>=4.60", "retry>=0.9", "pydantic>=2", "strictyaml>=1.7"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.1.1",
+    "black>=24.3.0",
+    "isort>=5.13.2",
+    "ruff>=0.11.0",
+]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+
+[project.scripts]
+segos = "segos.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["segos*", "benchmarks*", "evaluation*"]
+
+[tool.setuptools.package-data]
+"segos.evolution" = ["assets/*"]
+"benchmarks.skillsbench" = ["_gos_template/*", "graphskills_assets/bootstrap_skill/*", "graphskills_assets/bootstrap_skill/agents/*", "graphskills_assets/bootstrap_skill/references/*"]
+"benchmarks.alfworld" = ["*.yaml", "*.txt"]

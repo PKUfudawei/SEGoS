@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[codz]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Downloaded benchmark data (see DATA.md)
+data/
+
+# Generated SkillsBench task packs / run outputs (see benchmarks/skillsbench/README.md)
+benchmarks/skillsbench/generated*/
+benchmarks/skillsbench/jobs*/
+benchmarks/skillsbench/tasks/
+benchmarks/skillsbench/.cache/
+
+# ALFWorld run outputs / evolution artifacts (see benchmarks/alfworld/README.md)
+benchmarks/alfworld/generated/
+benchmarks/alfworld/jobs/
+benchmarks/alfworld/logs/
+
+# Local env
+.env
+
+# Experiment run artifacts (graphs, telemetry, retrieval dumps)
+data/analysis/
+data/experiments/
+data/rebuttal/
+
+# Job / run outputs
+jobs/
+artifacts/
+
+# Local workspaces and temp
+gos_workspace/
+.gos_experiment_workspace/
+tmp_*/
+.tmp_*/
+.pipeline/
+
+# Internal working notes: design plans, specs, experiment status, review-process
+# drafts. Kept locally, not published.
+docs/
+
+# Misc
+instance.json
+logs/
+.olauth
+
+# Local agent tooling
+.codebuddy/
+
+# Release data is explicitly included under paper/data.
+!paper/data/
+!paper/data/**
+runs/
+plans/
+*.log
+harbor-debug.tar.gz
+
+# Local benchmark task trees and runs
+evaluation/skillsbench/generated*/
+evaluation/skillsbench/tasks/
+evaluation/skillsbench/jobs*/
+evaluation/alfworld/jobs/
+
+# Unpacked review inputs; the versioned archives remain in paper/data.
+paper/data/skillsets/skills_*/
+paper/data/benchmarks/skillsbench/tasks/

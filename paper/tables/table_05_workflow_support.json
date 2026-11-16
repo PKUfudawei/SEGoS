@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "table_number": 5,
+  "labels": [
+    "tab:workflow_support"
+  ],
+  "caption": "Execution support for first-round workflow edges. Query observations count qualifying retrieval queries and determine induced workflow weights. Distinct-task support measures how many tasks supply that evidence, counting each task once.",
+  "caption_latex": "\\textbf{Execution support for first-round workflow edges.} Query observations count qualifying retrieval queries and determine induced workflow weights. Distinct-task support measures how many tasks supply that evidence, counting each task once.",
+  "source": {
+    "file": "sections/experiment.tex",
+    "line": 165,
+    "table_sha256": "ced35388f469d0d43e608e2696f8ab8f886f988fcb3a2693594a8ca52c7ac244"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Evolution set",
+        "Evidence unit",
+        "Once",
+        "Twice",
+        "Three times",
+        "Total"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Evolution set",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Evolution set",
+              "value": "Evolution set"
+            },
+            {
+              "latex": "Evidence unit",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Evidence unit",
+              "value": "Evidence unit"
+            },
+            {
+              "latex": "Once",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Once",
+              "value": "Once"
+            },
+            {
+              "latex": "Twice",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Twice",
+              "value": "Twice"
+            },
+            {
+              "latex": "Three times",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Three times",
+              "value": "Three times"
+            },
+            {
+              "latex": "Total",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Total",
+              "value": "Total"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Full87",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Full87",
+              "value": "Full87"
+            },
+            {
+              "latex": "Query observations",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Query observations",
+              "value": "Query observations"
+            },
+            {
+              "latex": "206",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "206",
+              "value": 206
+            },
+            {
+              "latex": "21",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "21",
+              "value": 21
+            },
+            {
+              "latex": "1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1",
+              "value": 1
+            },
+            {
+              "latex": "228",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "228",
+              "value": 228
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Full87",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Full87",
+              "value": "Full87"
+            },
+            {
+              "latex": "Distinct tasks",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Distinct tasks",
+              "value": "Distinct tasks"
+            },
+            {
+              "latex": "207",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "207",
+              "value": 207
+            },
+            {
+              "latex": "20",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "20",
+              "value": 20
+            },
+            {
+              "latex": "1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1",
+              "value": 1
+            },
+            {
+              "latex": "228",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "228",
+              "value": 228
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Train50",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Train50",
+              "value": "Train50"
+            },
+            {
+              "latex": "Query observations",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Query observations",
+              "value": "Query observations"
+            },
+            {
+              "latex": "111",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "111",
+              "value": 111
+            },
+            {
+              "latex": "16",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "16",
+              "value": 16
+            },
+            {
+              "latex": "0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0",
+              "value": 0
+            },
+            {
+              "latex": "127",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "127",
+              "value": 127
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Train50",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Train50",
+              "value": "Train50"
+            },
+            {
+              "latex": "Distinct tasks",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Distinct tasks",
+              "value": "Distinct tasks"
+            },
+            {
+              "latex": "111",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "111",
+              "value": 111
+            },
+            {
+              "latex": "16",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "16",
+              "value": 16
+            },
+            {
+              "latex": "0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0",
+              "value": 0
+            },
+            {
+              "latex": "127",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "127",
+              "value": 127
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "Full87",
+          "Query observations",
+          206,
+          21,
+          1,
+          228
+        ],
+        [
+          "Full87",
+          "Distinct tasks",
+          207,
+          20,
+          1,
+          228
+        ],
+        [
+          "Train50",
+          "Query observations",
+          111,
+          16,
+          0,
+          127
+        ],
+        [
+          "Train50",
+          "Distinct tasks",
+          111,
+          16,
+          0,
+          127
+        ]
+      ]
+    }
+  ]
+}

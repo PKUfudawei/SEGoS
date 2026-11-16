@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "transformation": "Remove archive entries whose path contains ._*, .DS_Store or __MACOSX; retain other member contents, types, modes, and link targets. skills_200 had no such entries and is byte-identical to its source.",
+  "archives": [
+    {
+      "name": "skills_200.tar.gz",
+      "source_url": "https://huggingface.co/datasets/davidliuk/graph-of-skills-data/resolve/main/skills_200.tar.gz",
+      "original_sha256": "8872f6088a92bcce1b68f9cfdf033190b2425b071eea3f438e98331635b0a634",
+      "original_size_bytes": 1284141,
+      "sha256": "8872f6088a92bcce1b68f9cfdf033190b2425b071eea3f438e98331635b0a634",
+      "size_bytes": 1284141,
+      "skills": 200,
+      "removed_macos_entries": 0,
+      "retained_entries": 912,
+      "retained_contents_types_modes_and_links_verified": true
+    },
+    {
+      "name": "skills_500.tar.gz",
+      "source_url": "https://huggingface.co/datasets/davidliuk/graph-of-skills-data/resolve/main/skills_500.tar.gz",
+      "original_sha256": "e740446f07baa4a53186780bd9f4e4939e30d283c8d21c6a7986285ed84cb2cb",
+      "original_size_bytes": 4282003,
+      "sha256": "ac1a57e3f3659a716cafce875ade6f11055744192b5375af0d5f5f4e9d719915",
+      "size_bytes": 4176289,
+      "skills": 500,
+      "removed_macos_entries": 1683,
+      "retained_entries": 1683,
+      "retained_contents_types_modes_and_links_verified": true
+    },
+    {
+      "name": "skills_1000.tar.gz",
+      "source_url": "https://huggingface.co/datasets/davidliuk/graph-of-skills-data/resolve/main/skills_1000.tar.gz",
+      "original_sha256": "48cf777043cea7547afa1f0082337428add0a4543c73c56a863c03dc1908faba",
+      "original_size_bytes": 4474324,
+      "sha256": "59f6a5321314529e207e53ee4e9b5170d28dd91c8fc4994896b1adaa14eadea8",
+      "size_bytes": 4415839,
+      "skills": 1000,
+      "removed_macos_entries": 491,
+      "retained_entries": 2848,
+      "retained_contents_types_modes_and_links_verified": true
+    },
+    {
+      "name": "skills_2000.tar.gz",
+      "source_url": "https://huggingface.co/datasets/davidliuk/graph-of-skills-data/resolve/main/skills_2000.tar.gz",
+      "original_sha256": "9a616f600488341263f4e931c8387140eb06349a957d498d98a5f5be90109a89",
+      "original_size_bytes": 29149810,
+      "sha256": "68fce6805b7276af7977b4d080be4cc7047d8b0a3892a528b3c2404425ad1faf",
+      "size_bytes": 28482159,
+      "skills": 2000,
+      "removed_macos_entries": 10880,
+      "retained_entries": 10880,
+      "retained_contents_types_modes_and_links_verified": true
+    }
+  ]
+}

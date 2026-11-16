@@ -1,0 +1,2448 @@
+{
+  "policy_version": "successful-couse-veto-v1",
+  "scope": "Prior-attempt evidence for released avoid relations; not a replay of all graph updates or a new performance evaluation.",
+  "rules": {
+    "success_reward": 0.9,
+    "minimum_failed_tasks": 1,
+    "maximum_successful_tasks": 0,
+    "retract_after_successful_tasks": 1,
+    "history": "All actual attempts from rounds 0 through r-1, restricted to training tasks."
+  },
+  "inputs": {
+    "experiments/skillsbench/full87/coldstart/segos_coldstart_skills1000.json": "5a94d61fcb5c3826beb1e4bb07afe4b080205622f8546c398d24701827b5650c",
+    "experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round1.json": "137d083e062137cb7d2b82492fa361b8b26e01318a0179d31f35dc05353d18e0",
+    "experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round2.json": "cdd5286052f52421bf793a7001055ed6100b4e2f3330cd520c1353ddd7fa8cb2",
+    "experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round3.json": "9164f2432566cc21f8953bdf5edb90e95282100af40046120818452034cfcd99",
+    "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz": "a909cfa9f0569003d224c240d406141cc36a26d46f7197711bab2fd9fb436731",
+    "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz": "1f1194d396ca041dce06927fe4f15f15881bb46d4507635dc2321908a6574185",
+    "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz": "0d8264f293de7123ecfbff6388f87f34b5bd1374cc4b609ed27dc9152963074c"
+  },
+  "implementation": {
+    "updates.py": "2e8e9d298d919d0d500e80ac6602095c2a4cafdfc93dd3f1e59b2c7c523c480b",
+    "signals.py": "63f564713f06fe9eca46e8f2aeb220b934cc119504dbb47ebd4a23357aa4f3cd"
+  },
+  "source_rounds": {
+    "0": {
+      "attempts": 174,
+      "tasks": 87
+    },
+    "1": {
+      "attempts": 174,
+      "tasks": 87
+    },
+    "2": {
+      "attempts": 174,
+      "tasks": 87
+    }
+  },
+  "transitions": {
+    "2": {
+      "prior_trace_rounds": [
+        0,
+        1
+      ],
+      "counts": {
+        "previous": 27,
+        "removed": 13,
+        "retained": 14,
+        "added": 6,
+        "current": 20
+      },
+      "removed": [
+        {
+          "pair": [
+            "casadi-ipopt-nlp",
+            "power-flow-data"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "energy-ac-optimal-power-flow",
+              "trial_dir": "energy-ac-optimal-power-flow__mV6HSm7",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "energy-ac-optimal-power-flow",
+              "trial_dir": "energy-ac-optimal-power-flow__HpjqhZ2",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "energy-ac-optimal-power-flow",
+              "trial_dir": "energy-ac-optimal-power-flow__uaMJh4F",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "ffmpeg-keyframe-extraction",
+            "sampling-and-indexing"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__L77ZFyS",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "sampling-and-indexing",
+            "video-frame-extraction"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__L77ZFyS",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-accommodations",
+            "search-attractions"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-accommodations",
+            "search-cities"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-accommodations",
+            "search-driving-distance"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-accommodations",
+            "search-flights"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-attractions",
+            "search-cities"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-attractions",
+            "search-driving-distance"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-cities",
+            "search-driving-distance"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-cities",
+            "search-flights"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-driving-distance",
+            "search-restaurants"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        },
+        {
+          "pair": [
+            "search-flights",
+            "search-restaurants"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 1,
+          "failed_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__rLQce4B",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": [
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__Kutco5T",
+              "reward": 1.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__9T8EnHh",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "travel-planning",
+              "trial_dir": "travel-planning__JSYreoR",
+              "reward": 1.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ]
+        }
+      ],
+      "retained": [
+        {
+          "pair": [
+            "custom-distance-metrics",
+            "pid-controller"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "bike-rebalance",
+              "trial_dir": "bike-rebalance__V8BnRQ9",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "custom-distance-metrics",
+            "vehicle-dynamics"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "bike-rebalance",
+              "trial_dir": "bike-rebalance__V8BnRQ9",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "dyn-object-masks",
+            "egomotion-estimation"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__N75KPP5",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__gBnayJe",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__5Zx9w6S",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__YGAPwCk",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "dyn-object-masks",
+            "sampling-and-indexing"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__N75KPP5",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__gBnayJe",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__5Zx9w6S",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__YGAPwCk",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "egomotion-estimation",
+            "output-validation"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__N75KPP5",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__gBnayJe",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__5Zx9w6S",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__YGAPwCk",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "ffmpeg-keyframe-extraction",
+            "gemini-count-in-video"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "ffmpeg-keyframe-extraction",
+            "openai-vision"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__JMi3jg9",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "finite-horizon-lqr",
+            "power-flow-data"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "energy-unit-commitment",
+              "trial_dir": "energy-unit-commitment__hfNRn3b",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "finite-horizon-lqr",
+            "report-generator"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "energy-unit-commitment",
+              "trial_dir": "energy-unit-commitment__hfNRn3b",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "gemini-count-in-video",
+            "openai-vision"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "gemini-count-in-video",
+            "sampling-and-indexing"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "gemini-count-in-video",
+            "video-frame-extraction"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "openai-vision",
+            "sampling-and-indexing"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "report-generator",
+            "segment-combiner"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__yeuf4sB",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        }
+      ],
+      "added": [
+        {
+          "pair": [
+            "FFmpeg Audio Processing",
+            "video-processor"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__TvxhU4X",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "civ6lib",
+            "map-optimization-strategy"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__5KrSM7J",
+              "reward": 0.6,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__XdZo7fS",
+              "reward": 0.6,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__njAt4cH",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "csv-processing",
+            "radar-automation"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "radar-vital-signs",
+              "trial_dir": "radar-vital-signs__mnTdWim",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "hex-grid-spatial",
+            "map-optimization-strategy"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__5KrSM7J",
+              "reward": 0.6,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__XdZo7fS",
+              "reward": 0.6,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__njAt4cH",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "senior-security",
+            "trivy-offline-vulnerability-scanning"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "software-dependency-audit",
+              "trial_dir": "software-dependency-audit__4dRgsik",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "software-dependency-audit",
+              "trial_dir": "software-dependency-audit__VHNKxSH",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "senior-security",
+            "vulnerability-csv-reporting"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "software-dependency-audit",
+              "trial_dir": "software-dependency-audit__4dRgsik",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "software-dependency-audit",
+              "trial_dir": "software-dependency-audit__VHNKxSH",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        }
+      ],
+      "eligible_on_released_navigation_graph": 56,
+      "eligible_but_not_released": [
+        [
+          "Excel Automation",
+          "data-reconciliation"
+        ],
+        [
+          "Excel Automation",
+          "timeseries-detrending"
+        ],
+        [
+          "TTS Audio Mastering",
+          "report-generator"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "energy-calculator"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "pause-detector"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "report-generator"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "segment-combiner"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "silence-detector"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "video-processor"
+        ],
+        [
+          "audio-extractor",
+          "report-generator"
+        ],
+        [
+          "civ6lib",
+          "sqlite-map-parser"
+        ],
+        [
+          "energy-calculator",
+          "ffmpeg-video-editing"
+        ],
+        [
+          "energy-calculator",
+          "pause-detector"
+        ],
+        [
+          "energy-calculator",
+          "report-generator"
+        ],
+        [
+          "energy-calculator",
+          "segment-combiner"
+        ],
+        [
+          "energy-calculator",
+          "silence-detector"
+        ],
+        [
+          "energy-calculator",
+          "video-processor"
+        ],
+        [
+          "enterprise-artifact-search",
+          "gmail-skill"
+        ],
+        [
+          "erlang-distribution",
+          "senior-security"
+        ],
+        [
+          "erlang-otp-behaviors",
+          "senior-security"
+        ],
+        [
+          "excitation-signal-design",
+          "integral-action-design"
+        ],
+        [
+          "ffmpeg-video-editing",
+          "pause-detector"
+        ],
+        [
+          "ffmpeg-video-editing",
+          "segment-combiner"
+        ],
+        [
+          "ffmpeg-video-editing",
+          "silence-detector"
+        ],
+        [
+          "hex-grid-spatial",
+          "sqlite-map-parser"
+        ],
+        [
+          "image-ocr",
+          "xlsx"
+        ],
+        [
+          "map-optimization-strategy",
+          "sqlite-map-parser"
+        ],
+        [
+          "object_counter",
+          "openai-vision"
+        ],
+        [
+          "pause-detector",
+          "report-generator"
+        ],
+        [
+          "pause-detector",
+          "segment-combiner"
+        ],
+        [
+          "pause-detector",
+          "video-processor"
+        ],
+        [
+          "pid-controller",
+          "simulation-metrics"
+        ],
+        [
+          "python-scala-oop",
+          "python-scala-syntax-mapping"
+        ],
+        [
+          "report-generator",
+          "silence-detector"
+        ],
+        [
+          "segment-combiner",
+          "silence-detector"
+        ],
+        [
+          "silence-detector",
+          "video-processor"
+        ]
+      ]
+    },
+    "3": {
+      "prior_trace_rounds": [
+        0,
+        1,
+        2
+      ],
+      "counts": {
+        "previous": 20,
+        "removed": 0,
+        "retained": 20,
+        "added": 24,
+        "current": 44
+      },
+      "removed": [],
+      "retained": [
+        {
+          "pair": [
+            "FFmpeg Audio Processing",
+            "video-processor"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__TvxhU4X",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "civ6lib",
+            "map-optimization-strategy"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__5KrSM7J",
+              "reward": 0.6,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__XdZo7fS",
+              "reward": 0.6,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__njAt4cH",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__XNPK4EX",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "csv-processing",
+            "radar-automation"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "radar-vital-signs",
+              "trial_dir": "radar-vital-signs__mnTdWim",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "custom-distance-metrics",
+            "pid-controller"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "bike-rebalance",
+              "trial_dir": "bike-rebalance__V8BnRQ9",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "custom-distance-metrics",
+            "vehicle-dynamics"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "bike-rebalance",
+              "trial_dir": "bike-rebalance__V8BnRQ9",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "dyn-object-masks",
+            "egomotion-estimation"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__N75KPP5",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__gBnayJe",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__5Zx9w6S",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__YGAPwCk",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__hFhArVy",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "dyn-object-masks",
+            "sampling-and-indexing"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__N75KPP5",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__gBnayJe",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__5Zx9w6S",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__YGAPwCk",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__hFhArVy",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "egomotion-estimation",
+            "output-validation"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__N75KPP5",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__gBnayJe",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__5Zx9w6S",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__YGAPwCk",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__hFhArVy",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            },
+            {
+              "task_name": "dynamic-object-aware-egomotion",
+              "trial_dir": "dynamic-object-aware-egomotion__r4oFNvX",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "ffmpeg-keyframe-extraction",
+            "gemini-count-in-video"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "ffmpeg-keyframe-extraction",
+            "openai-vision"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__JMi3jg9",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "finite-horizon-lqr",
+            "power-flow-data"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "energy-unit-commitment",
+              "trial_dir": "energy-unit-commitment__hfNRn3b",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "finite-horizon-lqr",
+            "report-generator"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "energy-unit-commitment",
+              "trial_dir": "energy-unit-commitment__hfNRn3b",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "gemini-count-in-video",
+            "openai-vision"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "gemini-count-in-video",
+            "sampling-and-indexing"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__4mLJchf",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "gemini-count-in-video",
+            "video-frame-extraction"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__4mLJchf",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "hex-grid-spatial",
+            "map-optimization-strategy"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__5KrSM7J",
+              "reward": 0.6,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__XdZo7fS",
+              "reward": 0.6,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__njAt4cH",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "civ6-adjacency-optimizer",
+              "trial_dir": "civ6-adjacency-optimizer__XNPK4EX",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "openai-vision",
+            "sampling-and-indexing"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "mario-coin-counting",
+              "trial_dir": "mario-coin-counting__iz24EMN",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "report-generator",
+            "segment-combiner"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__yeuf4sB",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "senior-security",
+            "trivy-offline-vulnerability-scanning"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "software-dependency-audit",
+              "trial_dir": "software-dependency-audit__4dRgsik",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "software-dependency-audit",
+              "trial_dir": "software-dependency-audit__VHNKxSH",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "senior-security",
+            "vulnerability-csv-reporting"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "software-dependency-audit",
+              "trial_dir": "software-dependency-audit__4dRgsik",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "software-dependency-audit",
+              "trial_dir": "software-dependency-audit__VHNKxSH",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        }
+      ],
+      "added": [
+        {
+          "pair": [
+            "Excel Automation",
+            "timeseries-detrending"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "shock-analysis-supply",
+              "trial_dir": "shock-analysis-supply__GK5P67M",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "shock-analysis-supply",
+              "trial_dir": "shock-analysis-supply__v5zzGUg",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "energy-calculator",
+            "ffmpeg-video-editing"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "energy-calculator",
+            "output-validation"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "energy-calculator",
+            "pause-detector"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "energy-calculator",
+            "report-generator"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "energy-calculator",
+            "segment-combiner"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "energy-calculator",
+            "silence-detector"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "energy-calculator",
+            "video-processor"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "ffmpeg-video-editing",
+            "pause-detector"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "ffmpeg-video-editing",
+            "report-generator"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "ffmpeg-video-editing",
+            "segment-combiner"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "ffmpeg-video-editing",
+            "silence-detector"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "output-validation",
+            "pause-detector"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "output-validation",
+            "report-generator"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "output-validation",
+            "segment-combiner"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "output-validation",
+            "silence-detector"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "pause-detector",
+            "report-generator"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "pause-detector",
+            "segment-combiner"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "pause-detector",
+            "video-processor"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "python-scala-idioms",
+            "python-scala-oop"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "python-scala-translation",
+              "trial_dir": "python-scala-translation__hdnN7qC",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "python-scala-oop",
+            "python-scala-syntax-mapping"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "python-scala-translation",
+              "trial_dir": "python-scala-translation__3fZNyVn",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "python-scala-translation",
+              "trial_dir": "python-scala-translation__ZafLLXv",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            },
+            {
+              "task_name": "python-scala-translation",
+              "trial_dir": "python-scala-translation__hdnN7qC",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "report-generator",
+            "silence-detector"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "segment-combiner",
+            "silence-detector"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        },
+        {
+          "pair": [
+            "silence-detector",
+            "video-processor"
+          ],
+          "failed_task_count": 1,
+          "successful_task_count": 0,
+          "failed_attempts": [
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__HCAsEBH",
+              "reward": 0.0,
+              "round": 0,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round0_train.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__8ApAkct",
+              "reward": 0.0,
+              "round": 1,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round1_eval.tar.gz"
+            },
+            {
+              "task_name": "video-silence-remover",
+              "trial_dir": "video-silence-remover__ouAi75b",
+              "reward": 0.0,
+              "round": 2,
+              "source_job": "experiments/skillsbench/full87/traces/segos_traces_round2_eval.tar.gz"
+            }
+          ],
+          "successful_attempts": []
+        }
+      ],
+      "eligible_on_released_navigation_graph": 69,
+      "eligible_but_not_released": [
+        [
+          "Excel Automation",
+          "data-reconciliation"
+        ],
+        [
+          "TTS Audio Mastering",
+          "report-generator"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "energy-calculator"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "pause-detector"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "report-generator"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "segment-combiner"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "silence-detector"
+        ],
+        [
+          "Voice Activity Detection (VAD)",
+          "video-processor"
+        ],
+        [
+          "audio-extractor",
+          "report-generator"
+        ],
+        [
+          "civ6lib",
+          "sqlite-map-parser"
+        ],
+        [
+          "dyn-object-masks",
+          "video-processor"
+        ],
+        [
+          "egomotion-estimation",
+          "video-processor"
+        ],
+        [
+          "enterprise-artifact-search",
+          "gmail-skill"
+        ],
+        [
+          "erlang-distribution",
+          "senior-security"
+        ],
+        [
+          "erlang-otp-behaviors",
+          "senior-security"
+        ],
+        [
+          "fuzzy-match",
+          "pdf-reading"
+        ],
+        [
+          "gemini-count-in-video",
+          "object_counter"
+        ],
+        [
+          "hex-grid-spatial",
+          "sqlite-map-parser"
+        ],
+        [
+          "map-optimization-strategy",
+          "sqlite-map-parser"
+        ],
+        [
+          "object_counter",
+          "openai-vision"
+        ],
+        [
+          "python-scala-collections",
+          "python-scala-functional"
+        ],
+        [
+          "python-scala-collections",
+          "python-scala-syntax-mapping"
+        ],
+        [
+          "python-scala-functional",
+          "python-scala-syntax-mapping"
+        ],
+        [
+          "sampling-and-indexing",
+          "video-processor"
+        ],
+        [
+          "suricata-offline-evejson",
+          "suricata-rules-basics"
+        ]
+      ]
+    }
+  }
+}

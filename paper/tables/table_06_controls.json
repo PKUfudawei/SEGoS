@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "table_number": 6,
+  "labels": [
+    "tab:controls",
+    "tab:initialization_graphs"
+  ],
+  "caption": "Evolution from two initializations. Reward (%) and evolved graph statistics, using each initial graph's own trajectories. All graphs have 1,000 nodes. Node edits count changed retrieval descriptions. Sem./Work./Dep./Alt. denote semantic/workflow/dependency/alternative edges; dependency and alternative edges are inherited.",
+  "caption_latex": "\\textbf{Evolution from two initializations.} Reward (\\%) and evolved graph statistics, using each initial graph's own trajectories. All graphs have 1,000 nodes. Node edits count changed retrieval descriptions. Sem./Work./Dep./Alt. denote semantic/workflow/dependency/alternative edges; dependency and alternative edges are inherited.",
+  "source": {
+    "file": "sections/experiment.tex",
+    "line": 191,
+    "table_sha256": "cdaedef36de05f08769bcd6462c06c62cb0ddf88d92fc399dc52bb389c7b471a"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Initialization",
+        "Initial",
+        "Evolved",
+        "Gain",
+        "Node edits",
+        "Sem.",
+        "Work.",
+        "Dep.",
+        "Alt.",
+        "Avoid",
+        "Total edges"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "",
+              "value": ""
+            },
+            {
+              "latex": "\\multicolumn{3}{c}{Reward}",
+              "row_span": 1,
+              "column_span": 3,
+              "text": "Reward",
+              "value": "Reward"
+            },
+            {
+              "latex": "\\multicolumn{7}{c}{Evolved graph statistics}",
+              "row_span": 1,
+              "column_span": 7,
+              "text": "Evolved graph statistics",
+              "value": "Evolved graph statistics"
+            }
+          ]
+        },
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Initialization",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Initialization",
+              "value": "Initialization"
+            },
+            {
+              "latex": "Initial",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Initial",
+              "value": "Initial"
+            },
+            {
+              "latex": "Evolved",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Evolved",
+              "value": "Evolved"
+            },
+            {
+              "latex": "Gain",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Gain",
+              "value": "Gain"
+            },
+            {
+              "latex": "Node edits",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Node edits",
+              "value": "Node edits"
+            },
+            {
+              "latex": "Sem.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Sem.",
+              "value": "Sem."
+            },
+            {
+              "latex": "Work.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Work.",
+              "value": "Work."
+            },
+            {
+              "latex": "Dep.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Dep.",
+              "value": "Dep."
+            },
+            {
+              "latex": "Alt.",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Alt.",
+              "value": "Alt."
+            },
+            {
+              "latex": "Avoid",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Avoid",
+              "value": "Avoid"
+            },
+            {
+              "latex": "Total edges",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Total edges",
+              "value": "Total edges"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Semantic-only",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Semantic-only",
+              "value": "Semantic-only"
+            },
+            {
+              "latex": "50.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "50.8",
+              "value": 50.8
+            },
+            {
+              "latex": "59.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "59.4",
+              "value": 59.4
+            },
+            {
+              "latex": "$+8.6$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+8.6",
+              "value": 8.6
+            },
+            {
+              "latex": "6",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "6",
+              "value": 6
+            },
+            {
+              "latex": "863",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "863",
+              "value": 863
+            },
+            {
+              "latex": "228",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "228",
+              "value": 228
+            },
+            {
+              "latex": "0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0",
+              "value": 0
+            },
+            {
+              "latex": "0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0",
+              "value": 0
+            },
+            {
+              "latex": "27",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "27",
+              "value": 27
+            },
+            {
+              "latex": "1,118",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1,118",
+              "value": 1118
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Typed from GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Typed from GoS",
+              "value": "Typed from GoS"
+            },
+            {
+              "latex": "52.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "52.4",
+              "value": 52.4
+            },
+            {
+              "latex": "60.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "60.8",
+              "value": 60.8
+            },
+            {
+              "latex": "$+8.4$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+8.4",
+              "value": 8.4
+            },
+            {
+              "latex": "3",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3",
+              "value": 3
+            },
+            {
+              "latex": "935",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "935",
+              "value": 935
+            },
+            {
+              "latex": "242",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "242",
+              "value": 242
+            },
+            {
+              "latex": "45",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "45",
+              "value": 45
+            },
+            {
+              "latex": "8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "8",
+              "value": 8
+            },
+            {
+              "latex": "23",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "23",
+              "value": 23
+            },
+            {
+              "latex": "1,253",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "1,253",
+              "value": 1253
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "Semantic-only",
+          50.8,
+          59.4,
+          8.6,
+          6,
+          863,
+          228,
+          0,
+          0,
+          27,
+          1118
+        ],
+        [
+          "Typed from GoS",
+          52.4,
+          60.8,
+          8.4,
+          3,
+          935,
+          242,
+          45,
+          8,
+          23,
+          1253
+        ]
+      ]
+    }
+  ]
+}

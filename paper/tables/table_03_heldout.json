@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "table_number": 3,
+  "labels": [
+    "tab:heldout",
+    "tab:paired"
+  ],
+  "caption": "Held-out performance and paired comparisons. Metrics follow Table tab:main. Bold/underline mark best/second-best in (a). MemRL* denotes our adaptation of MemRL's episodic-memory retrieval to skill retrieval. W/T/L denote task-level wins/ties/losses in (b).",
+  "caption_latex": "\\textbf{Held-out performance and paired comparisons.} Metrics follow Table~\\ref{tab:main}. Bold/underline mark best/second-best in (a). MemRL$^{*}$ denotes our adaptation of MemRL's episodic-memory retrieval to skill retrieval. W/T/L denote task-level wins/ties/losses in (b).",
+  "source": {
+    "file": "sections/experiment.tex",
+    "line": 77,
+    "table_sha256": "d135f784acbf1d857138011ea209abcca1618e3fb6ad806570a926f83b6ff176"
+  },
+  "panels": [
+    {
+      "panel": "a",
+      "columns": [
+        "Method",
+        "R ↑",
+        "T ↓",
+        "S ↓"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Method",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Method",
+              "value": "Method"
+            },
+            {
+              "latex": "R $\\uparrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "R ↑",
+              "value": "R ↑"
+            },
+            {
+              "latex": "T $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "T ↓",
+              "value": "T ↓"
+            },
+            {
+              "latex": "S $\\downarrow$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "S ↓",
+              "value": "S ↓"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Vanilla",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Vanilla",
+              "value": "Vanilla"
+            },
+            {
+              "latex": "44.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "44.8",
+              "value": 44.8
+            },
+            {
+              "latex": "5.23",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "5.23",
+              "value": 5.23
+            },
+            {
+              "latex": "\\underline{608.9}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "608.9",
+              "value": 608.9,
+              "emphasis": "underline"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Vector",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Vector",
+              "value": "Vector"
+            },
+            {
+              "latex": "38.1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "38.1",
+              "value": 38.1
+            },
+            {
+              "latex": "\\textbf{3.01}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.01",
+              "value": 3.01,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "\\textbf{573.4}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "573.4",
+              "value": 573.4,
+              "emphasis": "bold"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "MemRL$^{*}$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "MemRL*",
+              "value": "MemRL*"
+            },
+            {
+              "latex": "49.0",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "49.0",
+              "value": 49.0
+            },
+            {
+              "latex": "\\underline{3.12}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.12",
+              "value": 3.12,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "613.2",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "613.2",
+              "value": 613.2
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "GoS",
+              "value": "GoS"
+            },
+            {
+              "latex": "52.9",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "52.9",
+              "value": 52.9
+            },
+            {
+              "latex": "3.30",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.30",
+              "value": 3.3
+            },
+            {
+              "latex": "631.4",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "631.4",
+              "value": 631.4
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SkillDAG",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SkillDAG",
+              "value": "SkillDAG"
+            },
+            {
+              "latex": "\\underline{54.2}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "54.2",
+              "value": 54.2,
+              "emphasis": "underline"
+            },
+            {
+              "latex": "3.65",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.65",
+              "value": 3.65
+            },
+            {
+              "latex": "721.7",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "721.7",
+              "value": 721.7
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "SE-GoS",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "SE-GoS",
+              "value": "SE-GoS"
+            },
+            {
+              "latex": "\\textbf{58.3}",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "58.3",
+              "value": 58.3,
+              "emphasis": "bold"
+            },
+            {
+              "latex": "3.19",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "3.19",
+              "value": 3.19
+            },
+            {
+              "latex": "650.8",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "650.8",
+              "value": 650.8
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "Vanilla",
+          44.8,
+          5.23,
+          608.9
+        ],
+        [
+          "Vector",
+          38.1,
+          3.01,
+          573.4
+        ],
+        [
+          "MemRL*",
+          49.0,
+          3.12,
+          613.2
+        ],
+        [
+          "GoS",
+          52.9,
+          3.3,
+          631.4
+        ],
+        [
+          "SkillDAG",
+          54.2,
+          3.65,
+          721.7
+        ],
+        [
+          "SE-GoS",
+          58.3,
+          3.19,
+          650.8
+        ]
+      ]
+    },
+    {
+      "panel": "b",
+      "columns": [
+        "Protocol",
+        "Tasks",
+        "W/T/L",
+        "Difference (%)",
+        "95% paired CI (%)",
+        "Wilcoxon p"
+      ],
+      "rows": [
+        {
+          "kind": "header",
+          "cells": [
+            {
+              "latex": "Protocol",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Protocol",
+              "value": "Protocol"
+            },
+            {
+              "latex": "Tasks",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Tasks",
+              "value": "Tasks"
+            },
+            {
+              "latex": "W/T/L",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "W/T/L",
+              "value": "W/T/L"
+            },
+            {
+              "latex": "Difference (\\%)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Difference (%)",
+              "value": "Difference (%)"
+            },
+            {
+              "latex": "95\\% paired CI (\\%)",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "95% paired CI (%)",
+              "value": "95% paired CI (%)"
+            },
+            {
+              "latex": "Wilcoxon $p$",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Wilcoxon p",
+              "value": "Wilcoxon p"
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Full-benchmark",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Full-benchmark",
+              "value": "Full-benchmark"
+            },
+            {
+              "latex": "87",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "87",
+              "value": 87
+            },
+            {
+              "latex": "13/69/5",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "13/69/5",
+              "value": "13/69/5"
+            },
+            {
+              "latex": "+4.09",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+4.09",
+              "value": 4.09
+            },
+            {
+              "latex": "[+0.24, +8.05]",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "[+0.24, +8.05]",
+              "value": "[+0.24, +8.05]"
+            },
+            {
+              "latex": "0.0419",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.0419",
+              "value": 0.0419
+            }
+          ]
+        },
+        {
+          "kind": "data",
+          "cells": [
+            {
+              "latex": "Held-out",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "Held-out",
+              "value": "Held-out"
+            },
+            {
+              "latex": "37",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "37",
+              "value": 37
+            },
+            {
+              "latex": "6/30/1",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "6/30/1",
+              "value": "6/30/1"
+            },
+            {
+              "latex": "+4.16",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "+4.16",
+              "value": 4.16
+            },
+            {
+              "latex": "[+0.66, +8.61]",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "[+0.66, +8.61]",
+              "value": "[+0.66, +8.61]"
+            },
+            {
+              "latex": "0.0469",
+              "row_span": 1,
+              "column_span": 1,
+              "text": "0.0469",
+              "value": 0.0469
+            }
+          ]
+        }
+      ],
+      "data": [
+        [
+          "Full-benchmark",
+          87,
+          "13/69/5",
+          4.09,
+          "[+0.24, +8.05]",
+          0.0419
+        ],
+        [
+          "Held-out",
+          37,
+          "6/30/1",
+          4.16,
+          "[+0.66, +8.61]",
+          0.0469
+        ]
+      ]
+    }
+  ]
+}

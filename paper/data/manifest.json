@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "benchmarks/alfworld/alfworld_textworld.tar.gz",
+      "bytes": 131237145,
+      "sha256": "d45d285fa795afd8d107ad0a8e8a97813a60e2342d990ee19558696924e87550"
+    },
+    {
+      "path": "benchmarks/alfworld/archive_manifest.json",
+      "bytes": 2057,
+      "sha256": "14a989fe76d03e964ea1ed83b5dc2f1c8ccba78c460be7664a5999458552a91e"
+    },
+    {
+      "path": "benchmarks/skillsbench/archive_manifest.json",
+      "bytes": 690,
+      "sha256": "d0ce72d3ea97c306d4ca9116e1abcf41761b5b360eaf38718af82ff70c1f9ffc"
+    },
+    {
+      "path": "benchmarks/skillsbench/splits/train50_eval37.json",
+      "bytes": 3399,
+      "sha256": "8e9b2d271f1d0bdf64158d20fce095dfd4a0065dddbbf593d59afb598912ce7c"
+    },
+    {
+      "path": "benchmarks/skillsbench/tasks.tar.gz",
+      "bytes": 806141897,
+      "sha256": "7f7687cb295aca8d3892a2bd5eda6fd406b5c20a7a16f75dc6db9df1f1d00a79"
+    },
+    {
+      "path": "experiments/alfworld/coldstart/segos_coldstart_skills200.json",
+      "bytes": 1729371,
+      "sha256": "a7a39d20bc0cff272502e51b88cfa9f07c56776fd82f82e3829f088b8375c5ad"
+    },
+    {
+      "path": "experiments/skillsbench/full87/coldstart/segos_coldstart_skills1000.json",
+      "bytes": 6045187,
+      "sha256": "5a94d61fcb5c3826beb1e4bb07afe4b080205622f8546c398d24701827b5650c"
+    },
+    {
+      "path": "experiments/skillsbench/full87/controls/evolved_typed_gos/graphs/evolved_typed_gos_skills1000.json",
+      "bytes": 6643395,
+      "sha256": "27cfbba2cc94fdcd5cebfb1ebaa0b5103e64589452e7d819a5504f12c3af5f87"
+    },
+    {
+      "path": "experiments/skillsbench/full87/controls/evolved_typed_gos/scores/attempt_scores.jsonl",
+      "bytes": 53058,
+      "sha256": "94f05662abfabaae9bc2541f2f55302e9ef113f474aa3f3b0bd080a7f8163d80"
+    },
+    {
+      "path": "experiments/skillsbench/full87/controls/random_rewire_seed42/randomization_seed42_report.json",
+      "bytes": 1643,
+      "sha256": "8dde01dab259ff5c10abb8147f8b653df48974a1e508309ea630c732bfcb1a46"
+    },
+    {
+      "path": "experiments/skillsbench/full87/controls/random_rewire_seed42/segos_evolved_skills1000_round1_random_seed42.json",
+      "bytes": 6121889,
+      "sha256": "dc0e1fcca895c9ed7d2e7a37a1cebaa5c689cdb1fb10cd86a83e85e754764a6c"
+    },
+    {
+      "path": "experiments/skillsbench/full87/evolution/segos_evolution_deltas.tar.gz",
+      "bytes": 68171,
+      "sha256": "31d9114c32f8d829958f58f0afa8ad056ad46c8f23727fe13f152d7bd91fbef6"
+    },
+    {
+      "path": "experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round1.json",
+      "bytes": 6119713,
+      "sha256": "137d083e062137cb7d2b82492fa361b8b26e01318a0179d31f35dc05353d18e0"
+    },
+    {
+      "path": "experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round2.json",
+      "bytes": 6197936,
+      "sha256": "cdd5286052f52421bf793a7001055ed6100b4e2f3330cd520c1353ddd7fa8cb2"
+    },
+    {
+      "path": "experiments/skillsbench/full87/graphs/segos_evolved_skills1000_round3.json",
+      "bytes": 6241910,
+      "sha256": "9164f2432566cc21f8953bdf5edb90e95282100af40046120818452034cfcd99"
+    },
+    {
+      "path": "experiments/skillsbench/full87/provenance/avoid_transition_evidence.json",
+      "bytes": 82589,
+      "sha256": "ffc14562fa7fb5abd92d964697495a1015d3643743aea07578a25cf70f9be718"
+    },
+    {
+      "path": "experiments/skillsbench/full87/scores/segos_attempt_scores.jsonl",
+      "bytes": 31637,
+      "sha256": "45d4dfcb7099c70c5b40fb662c0f3a85b57cc967197c1c9d33e6649870e1dca1"
+    },
+    {
+      "path": "experiments/skillsbench/full87/scores/skilldag_attempt_scores.jsonl",
+      "bytes": 32501,
+      "sha256": "79d51c5067c0f21b3be5ee5d81a605c6ffceb6aedd0101b9613b1dc63c0b7764"
+    },
+    {
+      "path": "experiments/skillsbench/heldout/evolution/segos_evolution_deltas.tar.gz",
+      "bytes": 11307,
+      "sha256": "9f69ed0f41e2995a155f4a5ebcf59b01c11f73f5428692ed9bfb75b82a394b86"
+    },
+    {
+      "path": "experiments/skillsbench/heldout/graphs/segos_evolved_skills1000_heldout_train50.json",
+      "bytes": 6083156,
+      "sha256": "3f9de3ce6b0d9dd32fc0e615bd4802f8344652d9a515d52673ab5d6df92c2382"
+    },
+    {
+      "path": "experiments/skillsbench/heldout/scores/segos_attempt_scores.jsonl",
+      "bytes": 14467,
+      "sha256": "36bf758e3cc2d8a7d56a973aed86febb6f3812e55321cbb91c7b9ff488b2f3f0"
+    },
+    {
+      "path": "experiments/skillsbench/heldout/scores/skilldag_attempt_scores.jsonl",
+      "bytes": 14842,
+      "sha256": "746460091ef8c21be32c1027b79b9a66800975de47f837c42f637bd2573270cd"
+    },
+    {
+      "path": "skillsets/README.md",
+      "bytes": 260,
+      "sha256": "b6620e403cef3c63e487a3e2918a40136f6444b0b4d359325bcf71b430f686d6"
+    },
+    {
+      "path": "skillsets/archive_manifest.json",
+      "bytes": 2523,
+      "sha256": "fa8715eeb4457f6e160751d269446015af3eeb3867a6159334476af0585b2c5f"
+    },
+    {
+      "path": "skillsets/archives/skills_1000.tar.gz",
+      "bytes": 4415839,
+      "sha256": "59f6a5321314529e207e53ee4e9b5170d28dd91c8fc4994896b1adaa14eadea8"
+    },
+    {
+      "path": "skillsets/archives/skills_200.tar.gz",
+      "bytes": 1284141,
+      "sha256": "8872f6088a92bcce1b68f9cfdf033190b2425b071eea3f438e98331635b0a634"
+    },
+    {
+      "path": "skillsets/archives/skills_2000.tar.gz",
+      "bytes": 28482159,
+      "sha256": "68fce6805b7276af7977b4d080be4cc7047d8b0a3892a528b3c2404425ad1faf"
+    },
+    {
+      "path": "skillsets/archives/skills_500.tar.gz",
+      "bytes": 4176289,
+      "sha256": "ac1a57e3f3659a716cafce875ade6f11055744192b5375af0d5f5f4e9d719915"
+    }
+  ]
+}

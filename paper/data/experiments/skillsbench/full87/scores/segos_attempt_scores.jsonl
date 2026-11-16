@@ -1,0 +1,174 @@
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"3d-scan-calc","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"3d-scan-calc","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"ada-bathroom-plan-repair","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"ada-bathroom-plan-repair","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"adaptive-cruise-control","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"adaptive-cruise-control","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"azure-bgp-oscillation-route-leak","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"azure-bgp-oscillation-route-leak","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"bike-rebalance","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"bike-rebalance","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"citation-check","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"citation-check","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"civ6-adjacency-optimizer","attempt_id":1,"reward":0.6,"allowed_reward_values":"0; 0.05; 0.1; 0.15; 0.2; 0.25; 0.3; 0.35; 0.4; 0.45; 0.5; 0.55; 0.6; 0.65; 0.7; 0.75; 0.8; 0.85; 0.9; 0.95; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"civ6-adjacency-optimizer","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 0.05; 0.1; 0.15; 0.2; 0.25; 0.3; 0.35; 0.4; 0.45; 0.5; 0.55; 0.6; 0.65; 0.7; 0.75; 0.8; 0.85; 0.9; 0.95; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"court-form-filling","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"court-form-filling","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"crystallographic-wyckoff-position-analysis","attempt_id":1,"reward":0.55,"allowed_reward_values":"0; 0.09; 0.18; 0.27; 0.36; 0.45; 0.55; 0.64; 0.73; 0.82; 0.91; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"crystallographic-wyckoff-position-analysis","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 0.09; 0.18; 0.27; 0.36; 0.45; 0.55; 0.64; 0.73; 0.82; 0.91; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"dapt-intrusion-detection","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"dapt-intrusion-detection","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"data-to-d3","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"data-to-d3","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"debug-trl-grpo","attempt_id":1,"reward":0.6,"allowed_reward_values":"0; 0.25; 0.35; 0.4; 0.6; 0.65; 0.75; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"debug-trl-grpo","attempt_id":2,"reward":0.6,"allowed_reward_values":"0; 0.25; 0.35; 0.4; 0.6; 0.65; 0.75; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"dialogue-parser","attempt_id":1,"reward":0.833,"allowed_reward_values":"0; 0.167; 0.333; 0.5; 0.667; 0.833; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"dialogue-parser","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 0.167; 0.333; 0.5; 0.667; 0.833; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"drone-planning-control","attempt_id":1,"reward":0.266667,"allowed_reward_values":"0; 0.033333; 0.066667; 0.1; 0.133333; 0.166667; 0.2; 0.233333; 0.266667; 0.3; 0.333333; 0.366667; 0.4; 0.433333; 0.466667; 0.5; 0.533333; 0.566667; 0.6; 0.633333; 0.666667; 0.7; 0.733333; 0.766667; 0.8; 0.833333; 0.866667; 0.9; 0.933333; 0.966667; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"drone-planning-control","attempt_id":2,"reward":0.266667,"allowed_reward_values":"0; 0.033333; 0.066667; 0.1; 0.133333; 0.166667; 0.2; 0.233333; 0.266667; 0.3; 0.333333; 0.366667; 0.4; 0.433333; 0.466667; 0.5; 0.533333; 0.566667; 0.6; 0.633333; 0.666667; 0.7; 0.733333; 0.766667; 0.8; 0.833333; 0.866667; 0.9; 0.933333; 0.966667; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"dynamic-object-aware-egomotion","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"dynamic-object-aware-egomotion","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"earthquake-phase-association","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"earthquake-phase-association","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"earthquake-plate-calculation","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"earthquake-plate-calculation","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"econ-detrending-correlation","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"econ-detrending-correlation","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"edit-pdf","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"edit-pdf","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"energy-ac-optimal-power-flow","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"energy-ac-optimal-power-flow","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"energy-market-pricing","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"energy-market-pricing","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"energy-unit-commitment","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"energy-unit-commitment","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"enterprise-information-search","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"enterprise-information-search","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"exam-block-sequencing","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"exam-block-sequencing","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"exceltable-in-ppt","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"exceltable-in-ppt","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"exoplanet-detection-period","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"exoplanet-detection-period","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"financial-modeling-qa","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"financial-modeling-qa","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-build-agentops","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-build-agentops","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-build-google-auto","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-build-google-auto","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-druid-loophole-cve","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-druid-loophole-cve","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-erlang-ssh-cve","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-erlang-ssh-cve","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-visual-stability","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"fix-visual-stability","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"flink-query","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"flink-query","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"flood-risk-analysis","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"flood-risk-analysis","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"glm-lake-mendota","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"glm-lake-mendota","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"gravitational-wave-detection","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"gravitational-wave-detection","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"grid-dispatch-operator","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"grid-dispatch-operator","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"hvac-control","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"hvac-control","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"invoice-fraud-detection","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"invoice-fraud-detection","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"jax-computing-basics","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"jax-computing-basics","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"jpg-ocr-stat","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"jpg-ocr-stat","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"lab-unit-harmonization","attempt_id":1,"reward":1.0,"allowed_reward_values":"round(p/n,3), 0<=p<=n<=48, n>=1; 0 or 1 when no valid counts are available"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"lab-unit-harmonization","attempt_id":2,"reward":1.0,"allowed_reward_values":"round(p/n,3), 0<=p<=n<=48, n>=1; 0 or 1 when no valid counts are available"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"lake-warming-attribution","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"lake-warming-attribution","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"latex-formula-extraction","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"latex-formula-extraction","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"lean4-proof","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"lean4-proof","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"llm-prefix-cache-replay","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"llm-prefix-cache-replay","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"manufacturing-codebook-normalization","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"manufacturing-codebook-normalization","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"manufacturing-equipment-maintenance","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"manufacturing-equipment-maintenance","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"manufacturing-fjsp-optimization","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"manufacturing-fjsp-optimization","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"mario-coin-counting","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"mario-coin-counting","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"mars-clouds-clustering","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"mars-clouds-clustering","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"multilingual-video-dubbing","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"multilingual-video-dubbing","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"offer-letter-generator","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"offer-letter-generator","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"organize-messy-files","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"organize-messy-files","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"paper-anonymizer","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"paper-anonymizer","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"parallel-tfidf-search","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"parallel-tfidf-search","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"paratransit-routing","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"paratransit-routing","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"pddl-airport-planning","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"pddl-airport-planning","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"pddl-tpp-planning","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"pddl-tpp-planning","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"pdf-excel-diff","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"pdf-excel-diff","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"powerlifting-coef-calc","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"powerlifting-coef-calc","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"pptx-reference-formatting","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"pptx-reference-formatting","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"protein-expression-analysis","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"protein-expression-analysis","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"python-scala-translation","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"python-scala-translation","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"quantum-numerical-simulation","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"quantum-numerical-simulation","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"r2r-mpc-control","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"r2r-mpc-control","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"radar-vital-signs","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"radar-vital-signs","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"react-performance-debugging","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"react-performance-debugging","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"reserves-at-risk-calc","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"reserves-at-risk-calc","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"sales-pivot-analysis","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"sales-pivot-analysis","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"sec-financial-report","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"sec-financial-report","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"seismic-phase-picking","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"seismic-phase-picking","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"setup-fuzzing-py","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 0.16; 0.33; 0.5; 0.66; 0.83; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"setup-fuzzing-py","attempt_id":2,"reward":0.83,"allowed_reward_values":"0; 0.16; 0.33; 0.5; 0.66; 0.83; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"shock-analysis-demand","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"shock-analysis-demand","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"shock-analysis-supply","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"shock-analysis-supply","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"simpo-code-reproduction","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"simpo-code-reproduction","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"software-dependency-audit","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"software-dependency-audit","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"spring-boot-jakarta-migration","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"spring-boot-jakarta-migration","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"suricata-custom-exfil","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"suricata-custom-exfil","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"syzkaller-ppdev-syzlang","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"syzkaller-ppdev-syzlang","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"threejs-structure-parser","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"threejs-structure-parser","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"threejs-to-obj","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"threejs-to-obj","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"tictoc-unnecessary-abort-detection","attempt_id":1,"reward":0.85,"allowed_reward_values":"0; 0.05; 0.1; 0.15; 0.25; 0.35; 0.45; 0.5; 0.55; 0.7; 0.85; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"tictoc-unnecessary-abort-detection","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 0.05; 0.1; 0.15; 0.25; 0.35; 0.45; 0.5; 0.55; 0.7; 0.85; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"travel-planning","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"travel-planning","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"video-silence-remover","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"video-silence-remover","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"weighted-gdp-calc","attempt_id":1,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"weighted-gdp-calc","attempt_id":2,"reward":1.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"xlsx-recover-data","attempt_id":1,"reward":0.0,"allowed_reward_values":"0; 1"}
+{"method":"SE-GoS","protocol":"segos_full87","model":"deepseek-v4-flash-0731","task_name":"xlsx-recover-data","attempt_id":2,"reward":0.0,"allowed_reward_values":"0; 1"}
