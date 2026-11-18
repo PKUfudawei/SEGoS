@@ -21,3 +21,8 @@ hashes; no deployment-specific Docker overlay is required.
 
 This adapter derives from the upstream SkillsBench harness. Its license is
 retained in `LICENSE`.
+
+For new evolution runs, `segos signals --attempt-policy all_attempts` retains
+each attempt independently for all update channels. The historical runner
+scripts keep selected-attempt behavior. See [attempt protocols](attempt_protocol.md)
+for normalization, evidence boundaries and reproduction commands.

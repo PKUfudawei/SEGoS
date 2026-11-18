@@ -186,6 +186,7 @@ def parse_jobs(
     *,
     merge_attempts: bool | None = None,
     selection: dict[str, str] | None = None,
+    attempt_policy: str = "selected_attempt",
 ) -> dict[str, Any]:
     """Parse one or more completed harbor jobs into per-task signals.
 
@@ -196,10 +197,20 @@ def parse_jobs(
 
     Raw ``attempts`` are also retained for avoid induction/retraction. Those
     rules must see successful counterevidence and cannot use merged skill sets.
-    The per-task selection still controls the other update channels.
+    With ``attempt_policy="all_attempts"``, other channels also consume raw
+    attempts independently. The selected ``trials`` view is retained only for
+    task indexing and historical compatibility. Library callers default to
+    selected_attempt to preserve the archived experiment entry points.
     """
+    if attempt_policy not in {"selected_attempt", "all_attempts"}:
+        raise ValueError(f"Unknown evolution attempt policy: {attempt_policy}")
+    if attempt_policy == "all_attempts" and selection is not None:
+        raise ValueError("A selection manifest requires selected_attempt policy")
     if merge_attempts is None:
         merge_attempts = os.environ.get("SEGOS_MERGE_ATTEMPTS", "") == "1"
+
+    if attempt_policy == "all_attempts" and merge_attempts:
+        raise ValueError("all_attempts cannot merge rewards or skill sequences")
 
     bundle = load_bundle(bundle_path)
     dir_to_name = dir_to_name_map(bundle)
@@ -231,7 +242,7 @@ def parse_jobs(
                   for task, attempts in attempts_by_task.items()}
 
     n_attempts = sum(len(a) for a in attempts_by_task.values())
-    if not merge_attempts and n_attempts != len(trials):
+    if attempt_policy == "selected_attempt" and not merge_attempts and n_attempts != len(trials):
         print(f"[signals] collapsing {n_attempts} attempts -> {len(trials)} trials "
               f"(SEGOS_MERGE_ATTEMPTS=1 pools them instead)", flush=True)
 
@@ -240,6 +251,7 @@ def parse_jobs(
         "benchmark_model": benchmark_model_from_jobs(jobs_roots),
         "bundle_path": str(bundle_path),
         "merge_attempts": merge_attempts,
+        "evolution_attempt_policy": attempt_policy,
         "attempt_count": n_attempts,
         "trial_count": len(trials),
         "selection": {task: Path(t["trial_dir"]).name for task, t in trials.items()},

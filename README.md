@@ -70,8 +70,19 @@ segos evolve --graph /path/to/coldstart.json --signals runs/signals.json \
   --model gpt-5.2-codex --output runs/heldout/graph.json
 ```
 
-The parser records its per-task attempt selection. Supply `--selection` when
-replaying a fixed selection. Each factorial condition recomputes enabled updates
+New `segos signals` commands default to `--attempt-policy all_attempts`:
+workflow, dependency, weights and descriptions use all valid training attempts
+independently. Rewards and skill-use orders are never merged. For historical
+reproduction use `--attempt-policy selected_attempt`, optionally with
+`--selection /path/to/manifest.json`. Signals without a policy and the archived
+benchmark runner entry points retain selected-attempt behavior. The parser keeps
+the selected task view in either mode; `evolution_attempt_policy` determines
+which evidence the updates consume.
+
+The all-attempt protocol is a new implementation option, not the protocol behind
+the published scores. Its graph outputs carry a protocol version and are marked
+as not performance-evaluated. Existing graphs, scores and tables are unchanged.
+See [the protocol specification](benchmarks/skillsbench/attempt_protocol.md). Each factorial condition recomputes enabled updates
 in L1 → L2 → L3 order on the preceding updated graph; caches include input hashes
 and retrieval budgets. See [benchmarks/alfworld/README.md](benchmarks/alfworld/README.md)
 for its separate train/evaluation pipeline.

@@ -81,6 +81,43 @@ POSITIVE_RELATIONS = frozenset({"semantic", "workflow", "dependency", "alternati
 DEPENDENCY_THRESHOLD = 0.6  # I/O schema-overlap threshold for execution-certified dep edges
 
 
+ATTEMPT_POLICY_VERSION = "all-attempts-v1"
+
+
+def training_attempts(
+    signals: dict[str, Any], train_tasks: set[str],
+) -> list[tuple[str, dict[str, Any], float]]:
+    """Return (task, raw trial, task-normalization weight) in stable order.
+
+    Missing policy means historical selected-attempt behavior. All-attempt
+    evidence is never merged and never drawn from held-out tasks or avoid history.
+    """
+    policy = signals.get("evolution_attempt_policy", "selected_attempt")
+    if policy == "selected_attempt":
+        return [(task, signals["trials"][task], 1.0)
+                for task in sorted(train_tasks) if task in signals["trials"]]
+    if policy != "all_attempts":
+        raise ValueError(f"Unknown evolution attempt policy: {policy}")
+    if "attempts" not in signals or signals.get("merge_attempts"):
+        raise ValueError("all_attempts requires unmerged raw attempts; re-extract signals")
+    groups = {}
+    seen = set()
+    for trial in signals["attempts"]:
+        task = trial["task_name"]
+        if task not in train_tasks:
+            continue
+        if trial.get("attempt_dirs"):
+            raise ValueError("all_attempts requires unmerged raw attempts")
+        identity = (task, trial.get("source_job", ""), trial["trial_dir"])
+        if identity in seen:
+            raise ValueError(f"Duplicate training attempt: {identity}")
+        seen.add(identity)
+        groups.setdefault(task, []).append(trial)
+    return [(task, trial, 1.0 / len(groups[task]))
+            for task in sorted(groups)
+            for trial in sorted(groups[task], key=lambda t: (t.get("source_job", ""), t["trial_dir"]))]
+
+
 def retrieve_bundle(bundle: dict[str, Any], query: str) -> dict[str, Any]:
     if not query.strip():
         return {"skills": [], "seeds": []}
@@ -167,28 +204,22 @@ def compute_l2_delta(
         edges_by_target.setdefault(edge["target"], []).append(edge)
 
     delta: dict[str, float] = {}
-    trials = signals["trials"]
-    for task_name in train_tasks:
-        trial = trials.get(task_name)
-        if trial is None:
-            continue
+    records = training_attempts(signals, train_tasks)
+    for task_name, trial, attempt_weight in records:
         reward = trial.get("reward") or 0.0
         if reward <= 0.0:
             continue
         for used_skill in trial.get("used_skills") or []:
             for edge in edges_by_target.get(used_skill, []):
                 key = edge_key(edge)
-                delta[key] = delta.get(key, 0.0) + eta * reward
+                delta[key] = delta.get(key, 0.0) + eta * reward * attempt_weight
 
     # L2 soft-prunes semantic edges using task-level evidence. Multiple queries
     # from one task count once; a task surfaces a skill if any of its queries
     # retrieves it. No edge is deleted and there is no weight floor.
     retrieved_tasks: dict[str, set[str]] = {}
     used_anywhere: set[str] = set()
-    for task_name in sorted(train_tasks):
-        trial = trials.get(task_name)
-        if trial is None:
-            continue
+    for task_name, trial, attempt_weight in records:
         used_anywhere.update(trial.get("used_skills") or [])
         surfaced: set[str] = set()
         for query in trial.get("queries") or []:
@@ -220,14 +251,12 @@ def compute_l1_delta(
     import random
 
     rng = random.Random(seed)
-    trials = signals["trials"]
+    records = training_attempts(signals, train_tasks)
 
-    # 1) co-occurrence workflow edges seed -> used skill (successful trials)
+    # 1) Workflow witnesses stay within each successful attempt.
+    # Normalize query support by attempts per task in all_attempts mode.
     added: dict[str, dict[str, Any]] = {}
-    for task_name in sorted(train_tasks):
-        trial = trials.get(task_name)
-        if trial is None:
-            continue
+    for task_name, trial, attempt_weight in records:
         reward = trial.get("reward") or 0.0
         if reward < SUCCESS_REWARD:
             continue
@@ -257,8 +286,8 @@ def compute_l1_delta(
                             "_count": 0,
                         },
                     )
-                    entry["_count"] += 1
-                    entry["weight"] = min(0.9, NEW_EDGE_WEIGHT + 0.05 * (entry["_count"] - 1))
+                    entry["_count"] += attempt_weight
+                    entry["weight"] = min(0.9, NEW_EDGE_WEIGHT + 0.05 * max(0, entry["_count"] - 1))
                     entry["confidence"] = entry["weight"]
 
     # The same successful co-use that vetoes induction retracts an existing
@@ -374,15 +403,15 @@ def compute_dep_edges(
     from segos.graph import schema_overlap_score
 
     skills_by_name = {skill["name"]: skill for skill in bundle["skills"]}
-    trials = signals["trials"]
+    records = training_attempts(signals, train_tasks)
     added: dict[str, dict[str, Any]] = {}
-    for task_name in sorted(train_tasks):
-        trial = trials.get(task_name)
-        if trial is None:
-            continue
+    support_tasks: dict[str, set[str]] = {}
+    for task_name, trial, attempt_weight in records:
         if (trial.get("reward") or 0.0) < SUCCESS_REWARD:
             continue
-        ordered = trial.get("used_skills_ordered") or trial.get("used_skills") or []
+        ordered = trial.get("used_skills_ordered") or []
+        if signals.get("evolution_attempt_policy", "selected_attempt") == "selected_attempt":
+            ordered = ordered or trial.get("used_skills") or []
         if len(ordered) < 2:
             continue
         for i in range(len(ordered)):
@@ -416,7 +445,8 @@ def compute_dep_edges(
                         "_count": 0,
                     },
                 )
-                entry["_count"] += 1
+                support_tasks.setdefault(key, set()).add(task_name)
+                entry["_count"] = len(support_tasks[key])
                 entry["weight"] = min(0.9, NEW_EDGE_WEIGHT + 0.05 * (entry["_count"] - 1))
                 entry["confidence"] = entry["weight"]
     return [entry for _, entry in sorted(added.items())]
@@ -483,7 +513,7 @@ def compute_l3_delta(
     rng = random.Random(seed)
     llm = llm or LLMClient(model=resolve_rewriter_model(signals, benchmark_model))
 
-    trials = signals["trials"]
+    records = training_attempts(signals, train_tasks)
 
     # Guard corpus + protected set shared by every candidate: replay every
     # recorded train query (any outcome); a rewrite may never push a skill that
@@ -491,8 +521,7 @@ def compute_l3_delta(
     corpus_queries: list[str] = []
     seen_query: set[str] = set()
     protected: set[str] = set()
-    for task_name in sorted(train_tasks):
-        trial = trials.get(task_name, {})
+    for task_name, trial, attempt_weight in records:
         for query in trial.get("queries") or []:
             if query not in seen_query:
                 seen_query.add(query)
@@ -511,12 +540,9 @@ def compute_l3_delta(
             except Exception:  # noqa: BLE001
                 current_topk[q] = set()
 
-    # collect used-but-low-ranked skills from the selected train trials
+    # Collect misses from every trial admitted by the evolution policy.
     misses: dict[str, list[str]] = {}
-    for task_name in sorted(train_tasks):
-        trial = trials.get(task_name)
-        if trial is None:
-            continue
+    for task_name, trial, attempt_weight in records:
         reward = trial.get("reward") or 0.0
         if L3_MISS_SOURCE == "success":
             if reward < SUCCESS_REWARD:

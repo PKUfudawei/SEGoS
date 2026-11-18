@@ -29,6 +29,8 @@ def _evolve_bundle_serial(
 
     if cond not in {"static", "L1", "L2", "L3", "L1L2", "L1L3", "L2L3", "L1L2L3"}:
         raise ValueError(f"Unknown evolution condition: {cond}")
+    # Validate the policy even when a cached delta could otherwise bypass it.
+    records = levers.training_attempts(sig, task_set) if cond != "static" else []
     bundle = json.loads(json.dumps(base_bundle))
     rewriter_model = resolve_rewriter_model(sig, benchmark_model) if "L3" in cond else None
     if out_dir is not None:
@@ -44,6 +46,7 @@ def _evolve_bundle_serial(
         cache_name = f"delta_{DELTA_CACHE_VERSION}_{cond}_{lever}"
         if lever != "L3":
             inputs = {"bundle": bundle, "signals": sig, "tasks": sorted(task_set),
+                      "attempt_policy_version": levers.ATTEMPT_POLICY_VERSION,
                       "avoid_policy": levers.AVOID_POLICY_VERSION,
                       "avoid_fail_min": levers.AVOID_FAIL_MIN,
                       "avoid_success_max": levers.AVOID_SUCC_MAX,
@@ -66,7 +69,9 @@ def _evolve_bundle_serial(
             # cannot be silently used when resuming a run.
             inputs = {
                 "model": rewriter_model, "bundle": bundle,
-                "trials": sig.get("trials", {}), "tasks": sorted(task_set),
+                "training_attempts": records, "tasks": sorted(task_set),
+                "attempt_policy": sig.get("evolution_attempt_policy", "selected_attempt"),
+                "attempt_policy_version": levers.ATTEMPT_POLICY_VERSION,
                 "miss_source": levers.L3_MISS_SOURCE,
                 "rank_threshold": levers.L3_RANK_THRESHOLD,
                 "no_eviction_guard": levers.L3_NO_EVICTION_GUARD,
@@ -161,6 +166,15 @@ def _evolve_bundle_serial(
               f"(edges={len(bundle['edges'])})", flush=True)
     if rewriter_model is not None:
         bundle["segos_rewriter_model"] = rewriter_model
+    policy = sig.get("evolution_attempt_policy", "selected_attempt")
+    if cond != "static" and (policy == "all_attempts" or "segos_evolution_protocol" in bundle):
+        bundle["segos_evolution_protocol"] = {
+            "attempt_policy": policy,
+            "version": levers.ATTEMPT_POLICY_VERSION,
+            "training_tasks": sorted({task for task, _, _ in records}),
+            "training_attempt_count": len(records),
+            "performance_evaluated": False,
+        }
     return bundle
 
 def evolve_bundle_serial(base_bundle, sig, task_set, cond, out_dir=None, *, benchmark_model=None, retrieval=None):

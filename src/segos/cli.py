@@ -88,6 +88,9 @@ def main():
     signals.add_argument("--jobs", type=Path, nargs="+", required=True)
     signals.add_argument("--graph", type=Path, required=True)
     signals.add_argument("--selection", type=Path)
+    signals.add_argument("--attempt-policy", choices=["all_attempts", "selected_attempt"],
+                         default="all_attempts",
+                         help="all_attempts for new runs; selected_attempt for historical reproduction")
     signals.add_argument("--output", type=Path, required=True)
     prep = sub.add_parser("prepare", help="Prepare a fixed-graph SkillsBench evaluation")
     prep.add_argument("--tasks-root", type=Path, required=True)
@@ -138,7 +141,8 @@ def main():
     elif args.command == "signals":
         from benchmarks.skillsbench.evo.signals import parse_jobs
         selection = json.loads(args.selection.read_text()) if args.selection else None
-        parse_jobs(args.jobs, args.graph, args.output, merge_attempts=False, selection=selection)
+        parse_jobs(args.jobs, args.graph, args.output, merge_attempts=False, selection=selection,
+                   attempt_policy=args.attempt_policy)
     elif args.command == "prepare":
         if args.attempts < 1 or args.concurrency < 1:
             raise ValueError("Attempts and concurrency must be positive")
